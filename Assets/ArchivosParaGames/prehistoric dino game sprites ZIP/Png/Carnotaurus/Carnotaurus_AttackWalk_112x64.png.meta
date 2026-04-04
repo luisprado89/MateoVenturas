@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: 820cf4e7f1895694983fd24f7f966283
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -425314811496646453
+    second: Carnotaurus_AttackWalk_112x64_0
+  - first:
+      213: 8419109430917180290
+    second: Carnotaurus_AttackWalk_112x64_1
+  - first:
+      213: 8836292822748984173
+    second: Carnotaurus_AttackWalk_112x64_2
+  - first:
+      213: -5798032936529453084
+    second: Carnotaurus_AttackWalk_112x64_3
+  - first:
+      213: 7687021587776423766
+    second: Carnotaurus_AttackWalk_112x64_4
+  - first:
+      213: -2428475774974714382
+    second: Carnotaurus_AttackWalk_112x64_5
+  - first:
+      213: 5960520418249779629
+    second: Carnotaurus_AttackWalk_112x64_6
+  - first:
+      213: -2711963270475046325
+    second: Carnotaurus_AttackWalk_112x64_7
+  - first:
+      213: 5395671057480611882
+    second: Carnotaurus_AttackWalk_112x64_8
+  - first:
+      213: 3144879980160422276
+    second: Carnotaurus_AttackWalk_112x64_9
+  - first:
+      213: -3068981465443025576
+    second: Carnotaurus_AttackWalk_112x64_10
+  - first:
+      213: 7040422549562836578
+    second: Carnotaurus_AttackWalk_112x64_11
+  - first:
+      213: 1840595475623064277
+    second: Carnotaurus_AttackWalk_112x64_12
+  - first:
+      213: -7368491577595244442
+    second: Carnotaurus_AttackWalk_112x64_13
+  - first:
+      213: 8707971374636565099
+    second: Carnotaurus_AttackWalk_112x64_14
+  - first:
+      213: -8273448720920542763
+    second: Carnotaurus_AttackWalk_112x64_15
+  - first:
+      213: -8547598004474825812
+    second: Carnotaurus_AttackWalk_112x64_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 108
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8b70fae6af81af0800000000000000
+      internalID: -425314811496646453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 104
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ba5facb6fa6d470800000000000000
+      internalID: 8419109430917180290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 113
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63794f6181d0aa70800000000000000
+      internalID: 8836292822748984173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_3
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 113
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef952673cf398fa0800000000000000
+      internalID: -5798032936529453084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_4
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 113
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6574c201869cdaa60800000000000000
+      internalID: 7687021587776423766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_5
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 113
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd9df636225c4ed0800000000000000
+      internalID: -2428475774974714382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_6
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 113
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9ad3e7db508b250800000000000000
+      internalID: 5960520418249779629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_7
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 0
+        width: 113
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42ad6b26cb2d5ad0800000000000000
+      internalID: -2711963270475046325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_8
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 0
+        width: 113
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28fcf14d3641ea40800000000000000
+      internalID: 5395671057480611882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_9
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 0
+        width: 113
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48113befdabd4ab20800000000000000
+      internalID: 3144879980160422276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_10
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 0
+        width: 113
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85db20a0e99c865d0800000000000000
+      internalID: -3068981465443025576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_11
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 0
+        width: 110
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266c75fc10b94b160800000000000000
+      internalID: 7040422549562836578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_12
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 0
+        width: 113
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d234bb45db1b8910800000000000000
+      internalID: 1840595475623064277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_13
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 0
+        width: 113
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6605afa33fbddb990800000000000000
+      internalID: -7368491577595244442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_14
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 0
+        width: 113
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b628b7314dde8d870800000000000000
+      internalID: 8707971374636565099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_15
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 0
+        width: 113
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d10f12193ece2d80800000000000000
+      internalID: -8273448720920542763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnotaurus_AttackWalk_112x64_16
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 0
+        width: 113
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3b07ce6e4d06980800000000000000
+      internalID: -8547598004474825812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

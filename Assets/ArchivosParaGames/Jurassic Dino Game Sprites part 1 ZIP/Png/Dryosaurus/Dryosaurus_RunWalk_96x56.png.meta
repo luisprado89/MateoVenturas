@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: 1adc9fb1c6d70404db5dd491833749fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1990551896293501536
+    second: Dryosaurus_RunWalk_96x56_0
+  - first:
+      213: -7416597917370073327
+    second: Dryosaurus_RunWalk_96x56_1
+  - first:
+      213: 9083639381772297282
+    second: Dryosaurus_RunWalk_96x56_2
+  - first:
+      213: 6355358060971567211
+    second: Dryosaurus_RunWalk_96x56_3
+  - first:
+      213: 7131243080138542659
+    second: Dryosaurus_RunWalk_96x56_4
+  - first:
+      213: 8618129636333533482
+    second: Dryosaurus_RunWalk_96x56_5
+  - first:
+      213: 4587857780654184417
+    second: Dryosaurus_RunWalk_96x56_6
+  - first:
+      213: 2509681086041392410
+    second: Dryosaurus_RunWalk_96x56_7
+  - first:
+      213: 5955672030356931606
+    second: Dryosaurus_RunWalk_96x56_8
+  - first:
+      213: 5211214855916606527
+    second: Dryosaurus_RunWalk_96x56_9
+  - first:
+      213: 6191971736251203868
+    second: Dryosaurus_RunWalk_96x56_10
+  - first:
+      213: -274563861718795067
+    second: Dryosaurus_RunWalk_96x56_11
+  - first:
+      213: 4528864281643078067
+    second: Dryosaurus_RunWalk_96x56_12
+  - first:
+      213: -7277208162221287413
+    second: Dryosaurus_RunWalk_96x56_13
+  - first:
+      213: 9143141014593459946
+    second: Dryosaurus_RunWalk_96x56_14
+  - first:
+      213: 556556301706323316
+    second: Dryosaurus_RunWalk_96x56_15
+  - first:
+      213: 1249458657411395524
+    second: Dryosaurus_RunWalk_96x56_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 86
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a51272c8932064e0800000000000000
+      internalID: -1990551896293501536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 83
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f314d2d73f21990800000000000000
+      internalID: -7416597917370073327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_2
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244694af3e19f0e70800000000000000
+      internalID: 9083639381772297282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 0
+        width: 82
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6820acfb74c23850800000000000000
+      internalID: 6355358060971567211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_4
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 0
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ece966cc347f260800000000000000
+      internalID: 7131243080138542659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_5
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a293de15e3fb99770800000000000000
+      internalID: 8618129636333533482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_6
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 88
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e797ef08585baf30800000000000000
+      internalID: 4587857780654184417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_7
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 0
+        width: 87
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a158301a6ad24d220800000000000000
+      internalID: 2509681086041392410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_8
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 0
+        width: 90
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6148728382cc6a250800000000000000
+      internalID: 5955672030356931606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_9
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 0
+        width: 84
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34d52f1d44f15840800000000000000
+      internalID: 5211214855916606527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_10
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 0
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c110386dc7d4ee550800000000000000
+      internalID: 6191971736251203868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_11
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 0
+        width: 86
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc771a5f9d803cf0800000000000000
+      internalID: -274563861718795067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_12
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 0
+        width: 89
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b15a47b112c9de30800000000000000
+      internalID: 4528864281643078067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_13
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 0
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b081a369bb9220b90800000000000000
+      internalID: -7277208162221287413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_14
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 84
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6d5227f46f2ee70800000000000000
+      internalID: 9143141014593459946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_15
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 0
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475e5b4f10949b700800000000000000
+      internalID: 556556301706323316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dryosaurus_RunWalk_96x56_16
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 0
+        width: 85
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfea8c6708f65110800000000000000
+      internalID: 1249458657411395524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

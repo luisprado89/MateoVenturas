@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: 9607be08dfefe7a459fcbcda7d2ca703
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1825200817285822488
+    second: Raptor_AttackWalk_114x64_0
+  - first:
+      213: 3474430488707669221
+    second: Raptor_AttackWalk_114x64_1
+  - first:
+      213: 8896070021748763024
+    second: Raptor_AttackWalk_114x64_2
+  - first:
+      213: 592321091951192429
+    second: Raptor_AttackWalk_114x64_3
+  - first:
+      213: 3365888617683520805
+    second: Raptor_AttackWalk_114x64_4
+  - first:
+      213: 503986052039310189
+    second: Raptor_AttackWalk_114x64_5
+  - first:
+      213: 1523552143281383881
+    second: Raptor_AttackWalk_114x64_6
+  - first:
+      213: 7422001678621573767
+    second: Raptor_AttackWalk_114x64_7
+  - first:
+      213: -8156393316030095537
+    second: Raptor_AttackWalk_114x64_8
+  - first:
+      213: 7711965456483070269
+    second: Raptor_AttackWalk_114x64_9
+  - first:
+      213: -5391957040207095891
+    second: Raptor_AttackWalk_114x64_10
+  - first:
+      213: -5091675805805447303
+    second: Raptor_AttackWalk_114x64_11
+  - first:
+      213: -8367957956384472511
+    second: Raptor_AttackWalk_114x64_12
+  - first:
+      213: -6803938477181975961
+    second: Raptor_AttackWalk_114x64_13
+  - first:
+      213: 389544486428902339
+    second: Raptor_AttackWalk_114x64_14
+  - first:
+      213: -2046439293795542303
+    second: Raptor_AttackWalk_114x64_15
+  - first:
+      213: -8779839059894017447
+    second: Raptor_AttackWalk_114x64_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 108
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818f216197a645910800000000000000
+      internalID: 1825200817285822488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 98
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec15340f18a73030800000000000000
+      internalID: 3474430488707669221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_2
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 0
+        width: 87
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09926572d80357b70800000000000000
+      internalID: 8896070021748763024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_3
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 0
+        width: 115
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69e8b615e8583800800000000000000
+      internalID: 592321091951192429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_4
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 115
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d8e825dd906be20800000000000000
+      internalID: 3365888617683520805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_5
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 0
+        width: 115
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bfd83e4a48ef600800000000000000
+      internalID: 503986052039310189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_6
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 0
+        width: 115
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c962192a9eb42510800000000000000
+      internalID: 1523552143281383881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_7
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 0
+        width: 107
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7828798043f300760800000000000000
+      internalID: 7422001678621573767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_8
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 0
+        width: 101
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fd7a55e7baece80800000000000000
+      internalID: -8156393316030095537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_9
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 0
+        width: 106
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d31b1c119b7660b60800000000000000
+      internalID: 7711965456483070269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_10
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 0
+        width: 101
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da71a46c3abeb25b0800000000000000
+      internalID: -5391957040207095891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_11
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 0
+        width: 105
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977f38bd4dbb659b0800000000000000
+      internalID: -5091675805805447303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_12
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 0
+        width: 100
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142cc42f29a0fdb80800000000000000
+      internalID: -8367957956384472511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_13
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 0
+        width: 100
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762c4f9f00e8391a0800000000000000
+      internalID: -6803938477181975961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_14
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 0
+        width: 99
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c38ec185a0f76500800000000000000
+      internalID: 389544486428902339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_15
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 0
+        width: 99
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea5ae60e469993e0800000000000000
+      internalID: -2046439293795542303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raptor_AttackWalk_114x64_16
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 0
+        width: 103
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952eae184eeb72680800000000000000
+      internalID: -8779839059894017447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

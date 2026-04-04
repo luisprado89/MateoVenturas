@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: 6f8b231ec362bd34d890f41b4784568b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7731466210298642619
+    second: Baryonyx_Attack_Walk_64x32_0
+  - first:
+      213: 6989358177610487399
+    second: Baryonyx_Attack_Walk_64x32_1
+  - first:
+      213: 2955399324561471697
+    second: Baryonyx_Attack_Walk_64x32_2
+  - first:
+      213: 8949521758343257663
+    second: Baryonyx_Attack_Walk_64x32_3
+  - first:
+      213: -7272073992269957937
+    second: Baryonyx_Attack_Walk_64x32_4
+  - first:
+      213: -7361906557927696027
+    second: Baryonyx_Attack_Walk_64x32_5
+  - first:
+      213: 4716916299820833324
+    second: Baryonyx_Attack_Walk_64x32_6
+  - first:
+      213: -6353076744019743438
+    second: Baryonyx_Attack_Walk_64x32_7
+  - first:
+      213: 8274054797992092360
+    second: Baryonyx_Attack_Walk_64x32_8
+  - first:
+      213: -3082246975641076885
+    second: Baryonyx_Attack_Walk_64x32_9
+  - first:
+      213: -6925151330638034534
+    second: Baryonyx_Attack_Walk_64x32_10
+  - first:
+      213: -8601209981174715039
+    second: Baryonyx_Attack_Walk_64x32_11
+  - first:
+      213: 9205724296017454915
+    second: Baryonyx_Attack_Walk_64x32_12
+  - first:
+      213: 2897395936075186391
+    second: Baryonyx_Attack_Walk_64x32_13
+  - first:
+      213: -1522432702733174067
+    second: Baryonyx_Attack_Walk_64x32_14
+  - first:
+      213: 2001769835555078280
+    second: Baryonyx_Attack_Walk_64x32_15
+  - first:
+      213: 731829877808913965
+    second: Baryonyx_Attack_Walk_64x32_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fb63ed17054b490800000000000000
+      internalID: -7731466210298642619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766d1783b303ff060800000000000000
+      internalID: 6989358177610487399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d87aedf600b30920800000000000000
+      internalID: 2955399324561471697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3edda36f96133c70800000000000000
+      internalID: 8949521758343257663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4746eab37641b90800000000000000
+      internalID: -7272073992269957937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 64
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569d9199df045d990800000000000000
+      internalID: -7361906557927696027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a1216226ad57140800000000000000
+      internalID: 4716916299820833324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_7
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d68e18c5655d7a0800000000000000
+      internalID: -6353076744019743438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_8
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c26f6e300953d270800000000000000
+      internalID: 8274054797992092360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_9
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b34e2c4b8a935d0800000000000000
+      internalID: -3082246975641076885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a990f794e8be4ef90800000000000000
+      internalID: -6925151330638034534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_11
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d6981e71d52a880800000000000000
+      internalID: -8601209981174715039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_12
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347ad44297d41cf70800000000000000
+      internalID: 9205724296017454915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_13
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d00c67b04e953820800000000000000
+      internalID: 2897395936075186391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_14
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcab627e58b3fdae0800000000000000
+      internalID: -1522432702733174067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_15
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 0
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8804a524f07b7cb10800000000000000
+      internalID: 2001769835555078280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baryonyx_Attack_Walk_64x32_16
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 0
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e51de756bf72a00800000000000000
+      internalID: 731829877808913965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
