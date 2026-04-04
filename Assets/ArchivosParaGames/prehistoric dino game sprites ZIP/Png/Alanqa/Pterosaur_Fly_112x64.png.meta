@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pterosaur_Fly_112x64_0: 5271580426529888237
+      Pterosaur_Fly_112x64_1: 7017002353860188694
+      Pterosaur_Fly_112x64_2: -3011034525304432779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

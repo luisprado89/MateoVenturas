@@ -560,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carnotaurus_AttackWalk_112x64_0: -425314811496646453
+      Carnotaurus_AttackWalk_112x64_1: 8419109430917180290
+      Carnotaurus_AttackWalk_112x64_10: -3068981465443025576
+      Carnotaurus_AttackWalk_112x64_11: 7040422549562836578
+      Carnotaurus_AttackWalk_112x64_12: 1840595475623064277
+      Carnotaurus_AttackWalk_112x64_13: -7368491577595244442
+      Carnotaurus_AttackWalk_112x64_14: 8707971374636565099
+      Carnotaurus_AttackWalk_112x64_15: -8273448720920542763
+      Carnotaurus_AttackWalk_112x64_16: -8547598004474825812
+      Carnotaurus_AttackWalk_112x64_2: 8836292822748984173
+      Carnotaurus_AttackWalk_112x64_3: -5798032936529453084
+      Carnotaurus_AttackWalk_112x64_4: 7687021587776423766
+      Carnotaurus_AttackWalk_112x64_5: -2428475774974714382
+      Carnotaurus_AttackWalk_112x64_6: 5960520418249779629
+      Carnotaurus_AttackWalk_112x64_7: -2711963270475046325
+      Carnotaurus_AttackWalk_112x64_8: 5395671057480611882
+      Carnotaurus_AttackWalk_112x64_9: 3144879980160422276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

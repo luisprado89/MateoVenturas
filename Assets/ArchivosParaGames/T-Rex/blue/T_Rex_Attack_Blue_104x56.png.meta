@@ -385,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      T_Rex_Attack_Blue_104x56_0: 6412356282206409206
+      T_Rex_Attack_Blue_104x56_1: -3268126960540890397
+      T_Rex_Attack_Blue_104x56_2: 5968639018559671811
+      T_Rex_Attack_Blue_104x56_3: 8907177889676079141
+      T_Rex_Attack_Blue_104x56_4: 1877457731104749974
+      T_Rex_Attack_Blue_104x56_5: 7777485717544875626
+      T_Rex_Attack_Blue_104x56_6: 520786162705680725
+      T_Rex_Attack_Blue_104x56_7: -8413271964126931832
+      T_Rex_Attack_Blue_104x56_8: 6157131315248514467
+      T_Rex_Attack_Blue_104x56_9: 6906032375017463401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

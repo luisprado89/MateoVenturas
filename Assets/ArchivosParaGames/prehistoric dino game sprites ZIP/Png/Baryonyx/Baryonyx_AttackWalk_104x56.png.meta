@@ -610,7 +610,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Baryonyx_AttackWalk_104x56_0: -2029048049841114299
+      Baryonyx_AttackWalk_104x56_1: 8199291551759398726
+      Baryonyx_AttackWalk_104x56_10: -577674577167767472
+      Baryonyx_AttackWalk_104x56_11: -2084255493958192177
+      Baryonyx_AttackWalk_104x56_12: 5006116554269434389
+      Baryonyx_AttackWalk_104x56_13: -8456055998769175594
+      Baryonyx_AttackWalk_104x56_14: -3427222143846725613
+      Baryonyx_AttackWalk_104x56_15: -7156043629158449813
+      Baryonyx_AttackWalk_104x56_16: -841691640980450540
+      Baryonyx_AttackWalk_104x56_17: -9091191178807988530
+      Baryonyx_AttackWalk_104x56_18: -5283945756554043648
+      Baryonyx_AttackWalk_104x56_2: -3192440919130703715
+      Baryonyx_AttackWalk_104x56_3: 282972657993488320
+      Baryonyx_AttackWalk_104x56_4: -848597103658675366
+      Baryonyx_AttackWalk_104x56_5: 2859787940522092630
+      Baryonyx_AttackWalk_104x56_6: 6288100482181643310
+      Baryonyx_AttackWalk_104x56_7: -2563946314992525220
+      Baryonyx_AttackWalk_104x56_8: -8327006581529067211
+      Baryonyx_AttackWalk_104x56_9: 6255007818099920276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

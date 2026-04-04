@@ -385,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      T_Rex_Idle_Blue_96x56_0: 8639295896459400225
+      T_Rex_Idle_Blue_96x56_1: 5332584635018688856
+      T_Rex_Idle_Blue_96x56_2: -3336984886137027317
+      T_Rex_Idle_Blue_96x56_3: 4453268209120188096
+      T_Rex_Idle_Blue_96x56_4: 2330505167385704495
+      T_Rex_Idle_Blue_96x56_5: -6320111087562470868
+      T_Rex_Idle_Blue_96x56_6: 3837764954575547069
+      T_Rex_Idle_Blue_96x56_7: -7710094326722040624
+      T_Rex_Idle_Blue_96x56_8: 4118057702639623238
+      T_Rex_Idle_Blue_96x56_9: 4384375207276089767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

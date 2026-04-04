@@ -485,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terrain_bosque_oscuro_0: -5822130820703419435
+      Terrain_bosque_oscuro_1: 5208872796214438435
+      Terrain_bosque_oscuro_10: -729574757245553874
+      Terrain_bosque_oscuro_11: -3560406036146575482
+      Terrain_bosque_oscuro_12: -8490115981962468789
+      Terrain_bosque_oscuro_13: 3499267752496859699
+      Terrain_bosque_oscuro_2: 5199723546872722627
+      Terrain_bosque_oscuro_3: -7313624408609460138
+      Terrain_bosque_oscuro_4: -1818736899760716802
+      Terrain_bosque_oscuro_5: -8375144854442033100
+      Terrain_bosque_oscuro_6: -2221795481347059689
+      Terrain_bosque_oscuro_7: 6305626762588539641
+      Terrain_bosque_oscuro_8: 6975322142231410386
+      Terrain_bosque_oscuro_9: -2606947371996424248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

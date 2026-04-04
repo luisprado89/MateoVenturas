@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OnOro (38x38)_0: 3148490317949431105
+      OnOro (38x38)_1: 2338102471585972219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -560,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Raptor_AttackWalk_160x96_0: -8081259042726505657
+      Raptor_AttackWalk_160x96_1: -5563185489628957956
+      Raptor_AttackWalk_160x96_10: 7339521106138667920
+      Raptor_AttackWalk_160x96_11: -1966846936208208394
+      Raptor_AttackWalk_160x96_12: -4117760807075030502
+      Raptor_AttackWalk_160x96_13: 2911971748139142583
+      Raptor_AttackWalk_160x96_14: 7432620381445445642
+      Raptor_AttackWalk_160x96_15: 7336629386451930798
+      Raptor_AttackWalk_160x96_16: 8570832981728187884
+      Raptor_AttackWalk_160x96_2: -5301305062618010010
+      Raptor_AttackWalk_160x96_3: -2530549292550436853
+      Raptor_AttackWalk_160x96_4: -7692142181093293649
+      Raptor_AttackWalk_160x96_5: 1524350727001562491
+      Raptor_AttackWalk_160x96_6: 5235101461827729592
+      Raptor_AttackWalk_160x96_7: -6428154297063139090
+      Raptor_AttackWalk_160x96_8: -9222722961079387578
+      Raptor_AttackWalk_160x96_9: -1309199089124258525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

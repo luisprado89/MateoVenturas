@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ophiacodon_Idle_112x64_0: -801686681686724809
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

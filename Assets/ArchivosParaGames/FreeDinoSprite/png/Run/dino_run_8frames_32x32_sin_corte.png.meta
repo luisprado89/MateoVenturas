@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dino_run_8frames_32x32_sin_corte_0: 3801227644072823328
+      dino_run_8frames_32x32_sin_corte_1: -8433020980237069390
+      dino_run_8frames_32x32_sin_corte_2: 4168475776011795993
+      dino_run_8frames_32x32_sin_corte_3: -2883550593550959640
+      dino_run_8frames_32x32_sin_corte_4: -3103250071016499300
+      dino_run_8frames_32x32_sin_corte_5: -2476459840366793795
+      dino_run_8frames_32x32_sin_corte_6: 1330039116609841300
+      dino_run_8frames_32x32_sin_corte_7: 4463749825435302778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

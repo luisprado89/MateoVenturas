@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dimorphodon_Brown_104x56_0: -5285930221386323364
+      Dimorphodon_Brown_104x56_1: 1197470247019596977
+      Dimorphodon_Brown_104x56_2: -2717977174859476694
+      Dimorphodon_Brown_104x56_3: -2405634773519952203
+      Dimorphodon_Brown_104x56_4: 7316428381178377739
+      Dimorphodon_Brown_104x56_5: 5140251521436497311
+      Dimorphodon_Brown_104x56_6: -1139646765683783937
+      Dimorphodon_Brown_104x56_7: -2951332019149824152
+      Dimorphodon_Brown_104x56_8: -3390409652831035829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -385,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IdleRaptor_160x96_0: 645585531004216249
+      IdleRaptor_160x96_1: -8821653224985307946
+      IdleRaptor_160x96_2: 5712330319746698396
+      IdleRaptor_160x96_3: -5414567612481289200
+      IdleRaptor_160x96_4: -2689785677581046103
+      IdleRaptor_160x96_5: -7525484176581112252
+      IdleRaptor_160x96_6: -1133270879908027959
+      IdleRaptor_160x96_7: 7609493151578777572
+      IdleRaptor_160x96_8: -1339489306309612592
+      IdleRaptor_160x96_9: -1329752690784245318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

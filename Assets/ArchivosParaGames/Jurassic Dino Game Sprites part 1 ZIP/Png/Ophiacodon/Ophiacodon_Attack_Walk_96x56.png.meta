@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ophiacodon_Attack_Walk_96x56_0: 7552242926153205843
+      Ophiacodon_Attack_Walk_96x56_1: 7701932011825917971
+      Ophiacodon_Attack_Walk_96x56_2: -6862930570185610137
+      Ophiacodon_Attack_Walk_96x56_3: 2875420008087441926
+      Ophiacodon_Attack_Walk_96x56_4: -8531894825947041810
+      Ophiacodon_Attack_Walk_96x56_5: 1729674088114320482
+      Ophiacodon_Attack_Walk_96x56_6: 264756643713256054
+      Ophiacodon_Attack_Walk_96x56_7: 4590329315083825593
+      Ophiacodon_Attack_Walk_96x56_8: -4474381716476395350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

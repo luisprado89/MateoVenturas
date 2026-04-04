@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Baryonyx_Idle_96x56_0: 6686648563965203866
+      Baryonyx_Idle_96x56_1: 4692555551532612534
+      Baryonyx_Idle_96x56_2: 1943699465735625334
+      Baryonyx_Idle_96x56_3: 8980979421973766553
+      Baryonyx_Idle_96x56_4: 3339051424212452889
+      Baryonyx_Idle_96x56_5: -5879676937721363104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

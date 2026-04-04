@@ -485,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terrain_hielo_0: -6321656736057817401
+      Terrain_hielo_1: 3768391898968425547
+      Terrain_hielo_10: -2325798297756344573
+      Terrain_hielo_11: 630939774525060669
+      Terrain_hielo_12: 7800221433317845283
+      Terrain_hielo_13: 3344433003135874023
+      Terrain_hielo_2: 3861598545753861449
+      Terrain_hielo_3: -308455159935698280
+      Terrain_hielo_4: -91720069400479374
+      Terrain_hielo_5: -2853424850265568696
+      Terrain_hielo_6: 1435182534136764002
+      Terrain_hielo_7: 3974135747688885880
+      Terrain_hielo_8: 3464843349577133737
+      Terrain_hielo_9: 1431912537800840881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

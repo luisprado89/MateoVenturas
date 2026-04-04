@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Alanqa_Fly_96x56_0: -1811686672870500736
+      Alanqa_Fly_96x56_1: -2636489041128099267
+      Alanqa_Fly_96x56_2: -6867064634463829707
+      Alanqa_Fly_96x56_3: 6634135904021270021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

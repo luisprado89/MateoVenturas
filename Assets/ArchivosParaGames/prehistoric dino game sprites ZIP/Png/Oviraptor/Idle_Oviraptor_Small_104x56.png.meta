@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Idle_Oviraptor_Small_104x56_0: -8427008591727502184
+      Idle_Oviraptor_Small_104x56_1: 1985813037489914060
+      Idle_Oviraptor_Small_104x56_2: -414964155308130604
+      Idle_Oviraptor_Small_104x56_3: -7330418716090996678
+      Idle_Oviraptor_Small_104x56_4: 8212440865856713458
+      Idle_Oviraptor_Small_104x56_5: -2138918851121585490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

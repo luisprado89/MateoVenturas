@@ -385,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dryosaurus_idle_104x56_0: -605951075763615059
+      Dryosaurus_idle_104x56_1: -4191353747884419289
+      Dryosaurus_idle_104x56_2: 6962109846512221884
+      Dryosaurus_idle_104x56_3: -4772930558055409180
+      Dryosaurus_idle_104x56_4: 4914587775972237892
+      Dryosaurus_idle_104x56_5: 8578073144306726487
+      Dryosaurus_idle_104x56_6: 8292498510716248104
+      Dryosaurus_idle_104x56_7: -8547965166030216683
+      Dryosaurus_idle_104x56_8: 6654135033535033273
+      Dryosaurus_idle_104x56_9: 5695741629151437097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

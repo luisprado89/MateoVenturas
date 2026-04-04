@@ -485,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terrain_veneno_0: -2423521601005880592
+      Terrain_veneno_1: 7519548436329715978
+      Terrain_veneno_10: 3296452698682889391
+      Terrain_veneno_11: -7078158808031000673
+      Terrain_veneno_12: 6810913569407911067
+      Terrain_veneno_13: -5013043048816613902
+      Terrain_veneno_2: 7135564170058782040
+      Terrain_veneno_3: -3771487416691730776
+      Terrain_veneno_4: 5283382877720665498
+      Terrain_veneno_5: 2071347976840610613
+      Terrain_veneno_6: 201157138389897391
+      Terrain_veneno_7: 1025792545646785696
+      Terrain_veneno_8: 1485496156961012697
+      Terrain_veneno_9: 6712767235630724465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

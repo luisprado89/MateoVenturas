@@ -485,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terrain_desierto_0: -3223972275924269137
+      Terrain_desierto_1: 7819447874898164590
+      Terrain_desierto_10: -6105629114321623679
+      Terrain_desierto_11: -5558647880249341042
+      Terrain_desierto_12: -547520003445168508
+      Terrain_desierto_13: -8183371321831213747
+      Terrain_desierto_2: -2620735808283183271
+      Terrain_desierto_3: 3392883147751916678
+      Terrain_desierto_4: -4853494134611167976
+      Terrain_desierto_5: -9027044438904123761
+      Terrain_desierto_6: 5484561387787053030
+      Terrain_desierto_7: 4650023893231849127
+      Terrain_desierto_8: 2027685893123823942
+      Terrain_desierto_9: -8199587056852566022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

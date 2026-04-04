@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carnotaurus_Idle_112x64_0: 1767728833111765434
+      Carnotaurus_Idle_112x64_1: 8663880471721142251
+      Carnotaurus_Idle_112x64_2: 3818315545743710748
+      Carnotaurus_Idle_112x64_3: 455950186348612560
+      Carnotaurus_Idle_112x64_4: 2940105433502193530
+      Carnotaurus_Idle_112x64_5: -2537037003343851590
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IdleTriceratops_96x64_0: -8369757799178028250
+      IdleTriceratops_96x64_1: 4793925416307037802
+      IdleTriceratops_96x64_2: 8734469198933417470
+      IdleTriceratops_96x64_3: 1293233835338060376
+      IdleTriceratops_96x64_4: -5498733945366986469
+      IdleTriceratops_96x64_5: 6314747779149916991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

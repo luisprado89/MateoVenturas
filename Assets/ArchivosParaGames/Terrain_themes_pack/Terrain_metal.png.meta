@@ -485,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terrain_metal_0: -7798862320435211413
+      Terrain_metal_1: 915162514517227926
+      Terrain_metal_10: -8112429273446507795
+      Terrain_metal_11: -4130015993225385187
+      Terrain_metal_12: 3849050267278221898
+      Terrain_metal_13: -5570360820793819275
+      Terrain_metal_2: -4576176635688811186
+      Terrain_metal_3: 7977496778680881745
+      Terrain_metal_4: -498572244575959100
+      Terrain_metal_5: -1678959597233885801
+      Terrain_metal_6: 7250777108592678140
+      Terrain_metal_7: 829124946068398500
+      Terrain_metal_8: -5391546844081933054
+      Terrain_metal_9: -6192197027170050859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

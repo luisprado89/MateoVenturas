@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Styracosaurus_96x56_0: -4344489073097511292
+      Styracosaurus_96x56_1: -5435225955322984224
+      Styracosaurus_96x56_2: 803638131826350517
+      Styracosaurus_96x56_3: 600960273926242732
+      Styracosaurus_96x56_4: 7445602840926099852
+      Styracosaurus_96x56_5: -3863730999483994326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

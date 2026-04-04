@@ -560,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dryosaurus_RunWalk_104x56_0: -4962762816548190918
+      Dryosaurus_RunWalk_104x56_1: -587595012135064205
+      Dryosaurus_RunWalk_104x56_10: 1361030326224651399
+      Dryosaurus_RunWalk_104x56_11: 5813837521623184967
+      Dryosaurus_RunWalk_104x56_12: -8936946216415455679
+      Dryosaurus_RunWalk_104x56_13: 2622497117425202713
+      Dryosaurus_RunWalk_104x56_14: 4783782385653122643
+      Dryosaurus_RunWalk_104x56_15: -5567208329738285424
+      Dryosaurus_RunWalk_104x56_16: -3922971764745467912
+      Dryosaurus_RunWalk_104x56_2: -9112939308698694146
+      Dryosaurus_RunWalk_104x56_3: 7959903884963025375
+      Dryosaurus_RunWalk_104x56_4: 7157124483386153614
+      Dryosaurus_RunWalk_104x56_5: 7232041008722358904
+      Dryosaurus_RunWalk_104x56_6: 6655675546766527587
+      Dryosaurus_RunWalk_104x56_7: 2389493022348590891
+      Dryosaurus_RunWalk_104x56_8: 4872832494705167312
+      Dryosaurus_RunWalk_104x56_9: -4085641346437103233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

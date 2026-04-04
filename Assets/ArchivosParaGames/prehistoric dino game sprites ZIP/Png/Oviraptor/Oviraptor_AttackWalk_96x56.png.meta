@@ -510,7 +510,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Oviraptor_AttackWalk_96x56_0: -8487047865562089928
+      Oviraptor_AttackWalk_96x56_1: 2012137988277999702
+      Oviraptor_AttackWalk_96x56_10: 160439794395273869
+      Oviraptor_AttackWalk_96x56_11: 6577084411838376794
+      Oviraptor_AttackWalk_96x56_12: 7196807029874784706
+      Oviraptor_AttackWalk_96x56_13: 8181053708719215027
+      Oviraptor_AttackWalk_96x56_14: -6553403545025281527
+      Oviraptor_AttackWalk_96x56_2: 4980986903308411463
+      Oviraptor_AttackWalk_96x56_3: -4884398460634622069
+      Oviraptor_AttackWalk_96x56_4: -8320102461724366550
+      Oviraptor_AttackWalk_96x56_5: 1575710838811391790
+      Oviraptor_AttackWalk_96x56_6: 7231905478888782582
+      Oviraptor_AttackWalk_96x56_7: -8587125724925211936
+      Oviraptor_AttackWalk_96x56_8: 1853104067231800684
+      Oviraptor_AttackWalk_96x56_9: 6958032098735376309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
