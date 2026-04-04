@@ -9,7 +9,7 @@ public class FruitCollected : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false; // Desactivar el sprite del objeto para simular que ha sido recogido
             transform.GetChild(0).gameObject.SetActive(true); // Activar el hijo del objeto para mostrar la fruta recogida
 
-            FindAnyObjectByType<FruitManager>().AllFruitsCollected(); // Llamar al método AllFruitsCollected del FruitManager para verificar si todas las frutas han sido recogidas
+            //FindAnyObjectByType<FruitManager>().AllFruitsCollected(); // Llamar al método AllFruitsCollected del FruitManager para verificar si todas las frutas han sido recogidas
             Destroy(gameObject, 0.5f); // Destruir el objeto después de un corto período de tiempo para limpiar la escena
 
         }
