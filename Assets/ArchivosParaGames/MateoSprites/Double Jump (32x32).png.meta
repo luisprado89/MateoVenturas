@@ -137,12 +137,12 @@ TextureImporter:
       name: Double Jump (32x32)_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 17
-        width: 6
-        height: 6
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: Double Jump (32x32)_1
       rect:
         serializedVersion: 2
-        x: 2
+        x: 32
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Double Jump (32x32)_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 17
-        width: 6
-        height: 6
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: Double Jump (32x32)_3
       rect:
         serializedVersion: 2
-        x: 34
+        x: 96
         y: 0
-        width: 28
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: Double Jump (32x32)_4
       rect:
         serializedVersion: 2
-        x: 67
+        x: 128
         y: 0
-        width: 27
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: Double Jump (32x32)_5
       rect:
         serializedVersion: 2
-        x: 99
+        x: 160
         y: 0
-        width: 27
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,55 +265,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Double Jump (32x32)_6
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd417f285c5e71ae0800000000000000
-      internalID: -1578540507901520677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Double Jump (32x32)_7
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28b988fb3ca0d8070800000000000000
-      internalID: 8110150339812432770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 50d34f01256cb6f4f9d21368963540de
     internalID: 0
     vertices: []
     indices: 
@@ -321,7 +277,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Double Jump (32x32)_0: -9101230857065804138
       Double Jump (32x32)_1: -6204479477933590408
@@ -329,8 +287,6 @@ TextureImporter:
       Double Jump (32x32)_3: 781615245368611544
       Double Jump (32x32)_4: -3939753913355333839
       Double Jump (32x32)_5: 6301718139250434432
-      Double Jump (32x32)_6: -1578540507901520677
-      Double Jump (32x32)_7: 8110150339812432770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
