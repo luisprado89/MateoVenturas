@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel; // Referencia al panel de opciones
+    public AudioSource clip; // Referencia al componente de audio para reproducir el sonido de los botones
     public void OptionsPanel()
     {
         Time.timeScale = 0f; // Pausar el juego
@@ -23,5 +25,6 @@ public class UIManager : MonoBehaviour
     {
         Application.Quit(); // Salir del juego
     }
+
 
 }
