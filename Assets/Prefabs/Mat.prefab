@@ -43,7 +43,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 33cff0a43a5aa1d45947c1cf1a03d402, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 1695080030031389181}
   - component: {fileID: 79344585954320797}
   - component: {fileID: 8455269170316243241}
+  - component: {fileID: 5147270811851984235}
   m_Layer: 0
   m_Name: Mat
   m_TagString: Player
@@ -329,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ee7991b342d3a4bb1c2ee06056a9eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSelect
+  enableSelectCharacter: 0
   playerSelected: 0
   animator: {fileID: 4478520448199911146}
   spriteRenderer: {fileID: 7422332645116788467}
@@ -338,3 +340,24 @@ MonoBehaviour:
   playersRenderer:
   - {fileID: -6212472199927537589, guid: ad858d3c92abf074c8d88cabb9802cd7, type: 3}
   - {fileID: 1757689560807396612, guid: 6da4cddba535e8041822dade8ef171b8, type: 3}
+--- !u!114 &5147270811851984235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371458555471998024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed6a5bbe66d8f847b8c37c9280a24fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMoveJoystick
+  joystick: {fileID: 0}
+  runSpeed: 2
+  jumpSpeed: 4
+  doubleJumpSpeed: 3
+  betterJump: 0
+  fallMultiplier: 0.5
+  lowJumpMultiplier: 1
+  spriteRenderer: {fileID: 7422332645116788467}
+  animator: {fileID: 4478520448199911146}
