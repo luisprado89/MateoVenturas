@@ -10,16 +10,16 @@ public class ChangeDoorSkins : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            inDoor = true; // El jugador ha entrado en la puerta
             skinsPanel.gameObject.SetActive(true); // Mostrar el panel de skins
+            inDoor = true; // El jugador ha entrado en la puerta
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            inDoor = false; // El jugador ha salido de la puerta
             skinsPanel.gameObject.SetActive(false); // Ocultar el panel de skins
+            inDoor = false; // El jugador ha salido de la puerta
         }
     }
     public void SetPlayerMat()

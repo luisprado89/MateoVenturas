@@ -21,5 +21,6 @@ public class CheckGround : MonoBehaviour
         isGrounded = false; // El jugador ha dejado de tocar el suelo
         }
     }
+    
 
 }
