@@ -843,7 +843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &944474913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5786,6 +5786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasJoystick
       objectReference: {fileID: 0}
+    - target: {fileID: 1065135878281095254, guid: 81412e74e3c33874dad2f21e3ad5637e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5440743871793522013, guid: 81412e74e3c33874dad2f21e3ad5637e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6256,7 +6260,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1695080030031389181, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3352799507910400762, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6304,7 +6308,7 @@ PrefabInstance:
       objectReference: {fileID: 1503730485}
     - target: {fileID: 5147270811851984235, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7422332645116788467, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_SortingLayer
@@ -6329,7 +6333,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2542562908112911764}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127043066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aed6a5bbe66d8f847b8c37c9280a24fc, type: 3}
   m_Name: 

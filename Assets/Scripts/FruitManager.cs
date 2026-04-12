@@ -1,28 +1,71 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using TMPro;
 
 public class FruitManager : MonoBehaviour
 {
-    public TMP_Text levelCleared; // Referencia al componente Text para mostrar el mensaje de nivel completado
-    public GameObject transition; // Referencia al objeto de transición para activar la animación de transición al cambiar de escena
+    public TMP_Text levelCleared;
+    public GameObject transition;
+    public TMP_Text totalFruits;
+    public TMP_Text fruitsCollected;
+    private int totalFruitsInLevel;
+    public PlayerRespawn playerRespawn; // Referencia al script PlayerRespawn
+
+    void Start()
+    {
+        // Contar todas las frutas activas al inicio
+        totalFruitsInLevel = CountActiveFruits();
+    }
+
     private void Update()
     {
-        AllFruitsCollected();  // Llamar al método AllFruitsCollected en cada actualización para verificar si todas las frutas han sido recogidas
+        AllFruitCollected();
+        totalFruits.text = totalFruitsInLevel.ToString();
+        fruitsCollected.text = CountActiveFruits().ToString();
     }
-    public void AllFruitsCollected()
+
+    public void AllFruitCollected()
     {
-        if (transform.childCount == 0) // Verificar si no quedan frutas como hijos del objeto
+        if (CountActiveFruits() == 0)
         {
-            Debug.Log("All fruits collected!"); // Imprimir un mensaje en la consola para indicar que todas las frutas han sido recogidas
-            levelCleared.gameObject.SetActive(true); // Activar el mensaje de nivel completado
-            transition.SetActive(true); // Activar el objeto de transición para mostrar la animación de transición al cambiar de escena
-            Invoke("ChangeScene", 2f); // Llamar al método ChangeScene después de un retraso de 2 segundos para cambiar a la siguiente escena
+            Debug.Log("No quedan frutas");
+            levelCleared.gameObject.SetActive(true); // Activar el texto
+            transition.SetActive(true);
+            Invoke("ChangeScene", 2); // Esperar 2 segundos antes de cambiar de escena
         }
     }
-    public void ChangeScene()
+
+    private int CountActiveFruits()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Cargar la siguiente escena al llamar a este método
+        int activeFruits = 0;
+
+        // Recorrer todos los hijos del objeto FruitManager
+        foreach (Transform child in transform)
+        {
+            if (child.gameObject.activeSelf) // Verificar si el hijo está activo
+            {
+                activeFruits++;
+            }
+        }
+
+        return activeFruits;
+    }
+
+    void ChangeScene()
+    {
+        // Guardar las vidas actuales del jugador
+        //playerRespawn.SaveCurrentLives();
+
+        // Verificar si el nivel actual es el último nivel
+        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
+        {
+            // Si es el último nivel, cargar el Main Menu (índice 0)
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            // Si no es el último nivel, cargar el siguiente nivel
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
