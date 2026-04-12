@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class FruitCollected : MonoBehaviour
 {
+    public AudioSource collectSound; // Referencia al componente de audio para reproducir el sonido de recogida de fruta
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -11,6 +13,7 @@ public class FruitCollected : MonoBehaviour
 
             //FindAnyObjectByType<FruitManager>().AllFruitsCollected(); // Llamar al método AllFruitsCollected del FruitManager para verificar si todas las frutas han sido recogidas
             Destroy(gameObject, 0.5f); // Destruir el objeto después de un corto período de tiempo para limpiar la escena
+            collectSound.Play(); // Reproducir el sonido de recogida de fruta
 
         }
     }
