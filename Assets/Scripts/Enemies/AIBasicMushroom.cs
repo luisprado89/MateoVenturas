@@ -1,64 +1,109 @@
+using System.Collections;
 using UnityEngine;
 
-public class AIBasicMushroom : MonoBehaviour
+// Script que controla el movimiento de un enemigo entre varios puntos
+// y además ajusta su orientación (flip) y animación según si se está moviendo o no
+public class AIBasicMushroon : MonoBehaviour
 {
-    public Animator animator; // Referencia al componente Animator para controlar las animaciones del enemigo
-    public SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer para voltear el sprite del enemigo
-    public float speed = 0.5f; // Velocidad de movimiento del enemigo
-    private float waitTime; // Tiempo de espera antes de cambiar de dirección
-    public float startWaitTime = 2f; // Tiempo de espera inicial antes de cambiar de dirección
-    private int i = 0; // Variable para controlar la dirección del movimiento del enemigo (0: derecha, 1: izquierda)
-    private Vector2 actualPos; // Variable para almacenar la posición actual del enemigo
-    public Transform[] moveSpots; // Array de puntos de movimiento para el enemigo
+    public Animator animator; // Referencia al Animator para controlar las animaciones (Idle, Run, etc.)
+    public SpriteRenderer spriteRenderer; // Referencia al SpriteRenderer para girar el sprite (flipX)
+
+    public float speed = 0.5F; // Velocidad de movimiento del enemigo
+
+    private float waitTime; // Tiempo actual de espera antes de cambiar de punto
+    public float startWaitTime = 2; // Tiempo de espera inicial en cada punto
+
+    private int i = 0; // Índice del punto de destino actual
+    private Vector2 actualPos; // Guarda la posición anterior del enemigo para comparar movimiento
+
+    public Transform[] moveSpots; // Array de puntos entre los que se mueve el enemigo
 
     void Start()
     {
+        // Inicializamos el tiempo de espera
         waitTime = startWaitTime;
-        animator.SetBool("Run", true); // Activar la animación de correr al iniciar el juego
-        animator.SetBool("Idle", false); // Desactivar la animación de idle al iniciar el juego
-
     }
 
-    // Update is called once per frame
+    // Update se ejecuta en cada frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, moveSpots[i].position, speed * Time.deltaTime); // Mover el enemigo hacia el punto de movimiento actual
-        if (Vector2.Distance(transform.position, moveSpots[i].position) < 0.2f) // Verificar si el enemigo ha llegado al punto de movimiento actual
+        // Lanza una corrutina para comprobar si el enemigo se está moviendo o no
+        // (esto se usa para girar el sprite y cambiar animaciones)
+        StartCoroutine(CheckEnemyMoving());
+
+        // =========================================
+        // MOVIMIENTO DEL ENEMIGO
+        // =========================================
+        // Mover el enemigo hacia el punto actual usando MoveTowards
+        transform.position = Vector2.MoveTowards(
+            transform.position,
+            moveSpots[i].transform.position,
+            speed * Time.deltaTime
+        );
+
+        // =========================================
+        // COMPROBAR SI LLEGÓ AL PUNTO
+        // =========================================
+        if (Vector2.Distance(transform.position, moveSpots[i].transform.position) < 0.1f)
         {
-            //Mientras espera en el punto -> Idle
-            animator.SetBool("Run", false); // Desactivar la animación de correr mientras el enemigo espera en el punto de movimiento
-            animator.SetBool("Idle", true); // Activar la animación de idle mientras el enemigo espera en el punto de movimiento
-            if (waitTime <= 0) // Verificar si el tiempo de espera ha terminado para cambiar de dirección
+            // Si ya pasó el tiempo de espera, cambiar de punto
+            if (waitTime <= 0)
             {
-                if (moveSpots[i] != moveSpots[moveSpots.Length - 1]) // Si la dirección actual es hacia la derecha, cambiar a la izquierda
+                // Si no es el último punto, avanzar al siguiente
+                if (moveSpots[i] != moveSpots[moveSpots.Length - 1])
                 {
-                    i++; // Incrementar el índice para cambiar al siguiente punto de movimiento
-                    spriteRenderer.flipX = true; // Voltear el sprite del enemigo hacia la izquierda
-
-
+                    i++;
                 }
-                else // Si la dirección actual es hacia la izquierda, cambiar a la derecha
+                else
                 {
+                    // Si es el último punto, volver al primero
                     i = 0;
-                    spriteRenderer.flipX = false; // Voltear el sprite del enemigo hacia la derecha
-
                 }
-                //Al volver a moverse -> Run
-                animator.SetBool("Run", true); // Activar la animación de correr al cambiar de dirección
-                animator.SetBool("Idle", false); // Desactivar la animación de idle al cambiar de dirección
-                waitTime = startWaitTime; // Reiniciar el tiempo de espera para el próximo cambio de dirección
+
+                // Reiniciar el tiempo de espera
+                waitTime = startWaitTime;
             }
             else
             {
-                waitTime -= Time.deltaTime; // Reducir el tiempo de espera mientras el enemigo está en el punto de movimiento
+                // Reducir el tiempo de espera mientras está parado
+                waitTime -= Time.deltaTime;
             }
-
         }
-        else
+    }
+
+    // =========================================
+    // CORRUTINA PARA DETECTAR MOVIMIENTO
+    // =========================================
+    // Esta corrutina comprueba si el enemigo se está moviendo comparando su posición
+    // actual con la posición después de un pequeño tiempo (0.5 segundos)
+    IEnumerator CheckEnemyMoving()
+    {
+        // Guardar la posición actual
+        actualPos = transform.position;
+
+        // Esperar medio segundo
+        yield return new WaitForSeconds(0.5f);
+
+        // =========================================
+        // COMPROBAR DIRECCIÓN DE MOVIMIENTO
+        // =========================================
+
+        // Si la posición actual es mayor que la anterior → se mueve a la derecha
+        if (transform.position.x > actualPos.x)
         {
-            //Si todavía no ha llegado al punto -> Run
-            animator.SetBool("Run", true); // Activar la animación de correr mientras el enemigo se mueve hacia el punto de movimiento
-            animator.SetBool("Idle", false); // Desactivar la animación de idle mientras el enemigo se mueve hacia el punto de movimiento
+            spriteRenderer.flipX = true; // Voltear sprite (depende del sprite base)
+            animator.SetBool("Idle", false); // No está en Idle porque se está moviendo
+        }
+        // Si la posición actual es menor → se mueve a la izquierda
+        else if (transform.position.x < actualPos.x)
+        {
+            spriteRenderer.flipX = false; // Voltear sprite en el otro sentido
+            animator.SetBool("Idle", false); // No está en Idle
+        }
+        // Si la posición no cambió → está parado
+        else if (transform.position.x == actualPos.x)
+        {
+            animator.SetBool("Idle", true); // Activar animación Idle
         }
     }
 }

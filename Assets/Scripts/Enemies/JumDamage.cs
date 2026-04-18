@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class JumDamage : MonoBehaviour
 {
-    
-    public Collider2D collider2D; // Referencia al componente Collider2D del enemigo para detectar colisiones con el jugador
+
+    public Collider2D enemyCollider2D; // Referencia al componente Collider2D del enemigo para detectar colisiones con el jugador
     public Animator animator; // Referencia al componente Animator para controlar las animaciones del enemigo
     public SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer para voltear el sprite del enemigo
     public GameObject destroyParticle; // Prefab del efecto de destrucción que se instanciará al destruir el enemigo
