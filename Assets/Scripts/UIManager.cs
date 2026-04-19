@@ -1,30 +1,58 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
+// Clase encargada de gestionar los botones y paneles de la interfaz del juego
 public class UIManager : MonoBehaviour
 {
-    public GameObject optionsPanel; // Referencia al panel de opciones
-    public AudioSource clip; // Referencia al componente de audio para reproducir el sonido de los botones
+    public GameObject optionsPanel; // Panel de opciones
+    public GameObject iconMute;     // Imagen del icono de mute (solo visible cuando NO hay sonido)
+
+    private bool isMuted = false;   // Estado del sonido (true = muteado)
+
+    private void Start()
+    {
+        AudioListener.volume = 1f; // Al iniciar el juego el sonido está activo
+
+        if (iconMute != null) // Comprobamos que el icono esté asignado
+        {
+            iconMute.SetActive(false); // Ocultamos el icono porque al inicio hay sonido
+        }
+    }
+
+    public void ToggleMute()
+    {
+        isMuted = !isMuted; // Cambiamos el estado (true/false)
+
+        // Aplicamos mute global a TODO el juego
+        AudioListener.volume = isMuted ? 0f : 1f;
+
+        // Activamos el icono solo cuando el juego esté muteado
+        if (iconMute != null)
+        {
+            iconMute.SetActive(isMuted);
+        }
+    }
+
     public void OptionsPanel()
     {
         Time.timeScale = 0f; // Pausar el juego
-        optionsPanel.SetActive(true); // Mostrar el panel de opciones
+        optionsPanel.SetActive(true); // Mostrar panel
     }
+
     public void Return()
     {
-        Time.timeScale = 1f; // Reanudar el juego
-        optionsPanel.SetActive(false); // Ocultar el panel de opciones
+        Time.timeScale = 1f; // Reanudar juego
+        optionsPanel.SetActive(false); // Ocultar panel
     }
+
     public void MainMenu()
     {
-        Time.timeScale = 1f; // Reanudar el juego
-        SceneManager.LoadScene("Level1"); // Cargar la escena del menú principal 
+        Time.timeScale = 1f; // Asegurar tiempo normal
+        SceneManager.LoadScene("Level1"); // Cambia a "Menu" si corresponde
     }
-    public void QuitGame()// Método para salir del juego que solo funcionará en la versión compilada del juego, no en el editor de Unity, aplication.build
+
+    public void QuitGame()
     {
-        Application.Quit(); // Salir del juego
+        Application.Quit(); // Cerrar juego (solo funciona en build)
     }
-
-
 }
