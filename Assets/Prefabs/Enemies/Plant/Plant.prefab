@@ -211,7 +211,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07c2b13b99a22e459a15116ccd4d86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JumDamage
-  collider2D: {fileID: 4746442280258228692}
+  enemyCollider2D: {fileID: 4746442280258228692}
   animator: {fileID: 1730907497358782030}
   spriteRenderer: {fileID: 6846933234719036512}
   destroyParticle: {fileID: 6589992444399004613}
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlantEnemy
   waitTimeToAttack: 3
   animator: {fileID: 1730907497358782030}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 1229253142264595454, guid: 4825275bd63d26a4e9d132a22ead7308, type: 3}
   launchSpawnPoint: {fileID: 6794442106737345392}
 --- !u!1 &9069193532462129373
 GameObject:
@@ -462,7 +462,7 @@ Transform:
   m_GameObject: {fileID: 9069193532462129373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.056, y: 0.03, z: 0}
+  m_LocalPosition: {x: -0.781, y: 0.868, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
