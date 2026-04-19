@@ -3461,11 +3461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478274894224192634, guid: 9e2afa8f608c1fe47ab460fb968afbc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.415
+      value: 1.354
       objectReference: {fileID: 0}
     - target: {fileID: 6478274894224192634, guid: 9e2afa8f608c1fe47ab460fb968afbc3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.174
+      value: -0.091
       objectReference: {fileID: 0}
     - target: {fileID: 6478274894224192634, guid: 9e2afa8f608c1fe47ab460fb968afbc3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3848,6 +3848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981308859}
   - component: {fileID: 1981308858}
+  - component: {fileID: 1981308860}
   m_Layer: 0
   m_Name: AudioController
   m_TagString: Untagged
@@ -3866,7 +3867,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 731c2511262073f46af9af942eb93c71, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.15
   m_Pitch: 1
@@ -3967,6 +3968,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1981308860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981308857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169e256dd2dcc5541a543a18c950fe89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameAudioManager
+  audioSource: {fileID: 1981308858}
+  music: {fileID: 8300000, guid: 731c2511262073f46af9af942eb93c71, type: 3}
+  fruitCollectedSound: {fileID: 8300000, guid: 25091a0e483d83d4c8c80ce5a2ca9f9d, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 61af8ea381b7eda4eb9bdff40fbc721c, type: 3}
 --- !u!1001 &2067614740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4432,11 +4449,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4592848337807537216, guid: e8e19587f1f35e34199dab34187241be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.542
+      value: -0.003
       objectReference: {fileID: 0}
     - target: {fileID: 4592848337807537216, guid: e8e19587f1f35e34199dab34187241be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.021
+      value: -0.036
       objectReference: {fileID: 0}
     - target: {fileID: 4592848337807537216, guid: e8e19587f1f35e34199dab34187241be, type: 3}
       propertyPath: m_LocalPosition.z

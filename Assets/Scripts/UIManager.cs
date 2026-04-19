@@ -5,31 +5,26 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel; // Panel de opciones
-    public GameObject iconMute;     // Imagen del icono de mute (solo visible cuando NO hay sonido)
-
-    private bool isMuted = false;   // Estado del sonido (true = muteado)
+    public GameObject iconMute; // Imagen del icono de mute
 
     private void Start()
     {
-        AudioListener.volume = 1f; // Al iniciar el juego el sonido está activo
-
         if (iconMute != null) // Comprobamos que el icono esté asignado
         {
-            iconMute.SetActive(false); // Ocultamos el icono porque al inicio hay sonido
+            iconMute.SetActive(false); // Ocultamos el icono al inicio
         }
     }
 
     public void ToggleMute()
     {
-        isMuted = !isMuted; // Cambiamos el estado (true/false)
-
-        // Aplicamos mute global a TODO el juego
-        AudioListener.volume = isMuted ? 0f : 1f;
-
-        // Activamos el icono solo cuando el juego esté muteado
-        if (iconMute != null)
+        if (GameAudioManager.Instance != null) // Comprobamos que exista el gestor global de audio
         {
-            iconMute.SetActive(isMuted);
+            GameAudioManager.Instance.ToggleMute(); // Pedimos al gestor de audio que mutee o reactive el sonido
+
+            if (iconMute != null) // Comprobamos que el icono esté asignado
+            {
+                iconMute.SetActive(GameAudioManager.Instance.IsMuted()); // Mostramos el icono solo si el juego está muteado
+            }
         }
     }
 
@@ -48,11 +43,11 @@ public class UIManager : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f; // Asegurar tiempo normal
-        SceneManager.LoadScene("Level1"); // Cambia a "Menu" si corresponde
+        SceneManager.LoadScene("Level1"); // Cargar escena principal
     }
 
     public void QuitGame()
     {
-        Application.Quit(); // Cerrar juego (solo funciona en build)
+        Application.Quit(); // Cerrar juego
     }
 }
