@@ -3132,7 +3132,7 @@ MonoBehaviour:
   transition: {fileID: 968352587}
   totalFruits: {fileID: 1063087051}
   fruitsCollected: {fileID: 1766610242}
-  playerRespawn: {fileID: 0}
+  playerRespawn: {fileID: 2067614741}
 --- !u!4 &1288933161
 Transform:
   m_ObjectHideFlags: 0
@@ -3923,6 +3923,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24e053f5558bbab468584765a65812fe, type: 3}
+--- !u!114 &2067614741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 79344585954320797, guid: 24e053f5558bbab468584765a65812fe, type: 3}
+  m_PrefabInstance: {fileID: 2067614740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e7bd54c948e9a43a518b79b5458856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
 --- !u!1001 &2081379363
 PrefabInstance:
   m_ObjectHideFlags: 0
