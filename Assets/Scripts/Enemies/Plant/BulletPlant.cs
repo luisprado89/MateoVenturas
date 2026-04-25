@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class BulletPlant : MonoBehaviour
 {
     public float speed = 2f;// Su velocidad de la bola en el eje horizontal
     public float lifeTime = 2f;// Tiempo en segundos en el que el objeto existirá antes de destruirse

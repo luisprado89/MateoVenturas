@@ -95,26 +95,4 @@ public class PlayerMoveJoystick : MonoBehaviour
         }
     }
 
-
-
-    // // Detectar cuando el jugador entra en el área de una puerta
-    // void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     if (collision.gameObject.CompareTag("OpenDoor"))
-    //     {
-    //         Debug.Log("Entró en el trigger de la puerta"); // Mensaje de depuración
-    //     }
-    // }
-
-    // // Detectar cuando el jugador sale del área de una puerta
-    // void OnTriggerExit2D(Collider2D collision)
-    // {
-    //     if (collision.gameObject.CompareTag("OpenDoor"))
-    //     {
-    //         Debug.Log("Salió del trigger de la puerta"); // Mensaje de depuración
-    //     }
-    // }
-
-
-
 }
