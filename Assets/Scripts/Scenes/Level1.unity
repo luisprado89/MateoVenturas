@@ -5850,7 +5850,7 @@ PrefabInstance:
     - target: {fileID: 5440743871793522013, guid: 81412e74e3c33874dad2f21e3ad5637e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2542562908112911765}
+      objectReference: {fileID: 0}
     - target: {fileID: 5440743871793522013, guid: 81412e74e3c33874dad2f21e3ad5637e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: JumpButton
@@ -5940,17 +5940,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81412e74e3c33874dad2f21e3ad5637e, type: 3}
---- !u!114 &1503730485 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7602742401306731511, guid: 81412e74e3c33874dad2f21e3ad5637e, type: 3}
-  m_PrefabInstance: {fileID: 1503730484}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1569564041
 GameObject:
   m_ObjectHideFlags: 0
@@ -6463,7 +6452,7 @@ PrefabInstance:
     - target: {fileID: 5147270811851984235, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: joystick
       value: 
-      objectReference: {fileID: 1503730485}
+      objectReference: {fileID: 0}
     - target: {fileID: 5147270811851984235, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6476,6 +6465,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1527510519
       objectReference: {fileID: 0}
+    - target: {fileID: 8023852839958946436, guid: 24e053f5558bbab468584765a65812fe, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023852839958946436, guid: 24e053f5558bbab468584765a65812fe, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8371458555471998024, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_Name
       value: Mat
@@ -6485,17 +6482,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24e053f5558bbab468584765a65812fe, type: 3}
---- !u!114 &2542562908112911765 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5147270811851984235, guid: 24e053f5558bbab468584765a65812fe, type: 3}
-  m_PrefabInstance: {fileID: 2542562908112911764}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127043066}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aed6a5bbe66d8f847b8c37c9280a24fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMoveJoystick
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -107,8 +107,8 @@ GameObject:
   - component: {fileID: 1695080030031389181}
   - component: {fileID: 79344585954320797}
   - component: {fileID: 8455269170316243241}
-  - component: {fileID: 5147270811851984235}
   - component: {fileID: 8023852839958946436}
+  - component: {fileID: 4364644265625903882}
   m_Layer: 0
   m_Name: Mat
   m_TagString: Player
@@ -345,25 +345,6 @@ MonoBehaviour:
   playersRenderer:
   - {fileID: -6212472199927537589, guid: ad858d3c92abf074c8d88cabb9802cd7, type: 3}
   - {fileID: 1757689560807396612, guid: 6da4cddba535e8041822dade8ef171b8, type: 3}
---- !u!114 &5147270811851984235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8371458555471998024}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aed6a5bbe66d8f847b8c37c9280a24fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMoveJoystick
-  joystick: {fileID: 0}
-  runSpeedHorizontal: 2
-  runSpeed: 2
-  jumpSpeed: 4
-  doubleJumpSpeed: 3
-  spriteRenderer: {fileID: 7422332645116788467}
-  animator: {fileID: 4478520448199911146}
 --- !u!114 &8023852839958946436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,8 +383,8 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 076199a9-c333-4bf4-aa1f-63e0f179b9cf
+        m_CallState: 0
+    m_ActionId: 8e87518a-1de7-4620-9375-8dcf5cd93e52
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
   - m_PersistentCalls:
       m_Calls:
@@ -418,11 +399,27 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 292a2d81-a777-45f0-944d-e7d3a96fd89a
+        m_CallState: 0
+    m_ActionId: b90c3f6c-b9f7-4bcb-a0ea-41a747791473
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &4364644265625903882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371458555471998024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc702eb10a951cf498987a6d01a99ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPowerUp
+  powerUpDuration: 30
+  blinkSpeed: 0.15
+  powerUpColor: {r: 0, g: 1, b: 1, a: 1}
+  powerUpActive: 0

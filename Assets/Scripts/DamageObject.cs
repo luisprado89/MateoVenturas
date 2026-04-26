@@ -4,11 +4,34 @@ public class DamageObject : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Comprobamos si el objeto que entra en el trigger es el Player
         if (collision.transform.CompareTag("Player"))
         {
-            collision.transform.SetParent(null); // Quitamos al jugador como hijo de la plataforma antes de aplicar el daño para evitar errores al cambiar la jerarquía
-            Debug.Log("Player hit by damage object!"); // Imprimir un mensaje en la consola para indicar que el jugador ha sido golpeado por el objeto de daño
-            collision.transform.GetComponent<PlayerRespawn>().PlayerDamaged(); // Llamar al método PlayerDamaged del script PlayerRespawn para simular el daño al jugador
+            // Buscamos si el Player tiene el script PlayerPowerUp
+            PlayerPowerUp powerUp = collision.GetComponent<PlayerPowerUp>();
+
+            // Si el Player tiene el power-up activo
+            if (powerUp != null && powerUp.powerUpActive)
+            {
+                // Buscamos el script JumpDamage en los objetos padre del DamageObject
+                JumpDamage jumpDamage = GetComponentInParent<JumpDamage>();
+
+                // Si encontramos JumpDamage, matamos al enemigo usando su propio sistema
+                if (jumpDamage != null)
+                {
+                    jumpDamage.KillByPowerUp();
+                }
+
+                // Salimos para que el jugador NO reciba daño
+                return;
+            }
+
+            // Si NO tiene power-up, comportamiento normal: el jugador recibe daño
+            collision.transform.SetParent(null);
+
+            Debug.Log("Player hit by damage object!");
+
+            collision.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
         }
     }
 }
