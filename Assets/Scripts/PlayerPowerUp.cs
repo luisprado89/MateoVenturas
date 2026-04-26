@@ -28,6 +28,11 @@ public class PlayerPowerUp : MonoBehaviour // Script que controla el power-up te
     {
         powerUpActive = true; // Activa el estado de power-up.
 
+        if (GameAudioManager.Instance != null) // Comprueba que existe el gestor de audio.
+        {
+            GameAudioManager.Instance.StartPowerUpMusic(); // Cambia la música normal por la música del power-up.
+        }
+
         float endTime = Time.time + powerUpDuration; // Calcula el momento exacto en que debe terminar.
 
         while (Time.time < endTime) // Mientras no haya pasado el tiempo total del power-up.
@@ -41,5 +46,10 @@ public class PlayerPowerUp : MonoBehaviour // Script que controla el power-up te
 
         powerUpActive = false; // Desactiva el estado de power-up.
         spriteRenderer.color = originalColor; // Asegura que el jugador recupere su color original.
+
+        if (GameAudioManager.Instance != null) // Comprueba que existe el gestor de audio.
+        {
+            GameAudioManager.Instance.StopPowerUpMusic(); // Detiene la música del power-up y vuelve a la música normal.
+        }
     }
 }

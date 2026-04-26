@@ -2,23 +2,31 @@ using UnityEngine;
 
 public class BulletPlant : MonoBehaviour
 {
-    public float speed = 2f;// Su velocidad de la bola en el eje horizontal
-    public float lifeTime = 2f;// Tiempo en segundos en el que el objeto existirá antes de destruirse
-    public bool left;//Indica la dirección del movimiento de la bola true -> se mueve a la izquierda, false -> se mueve a la derecha
+    public float speed = 2f; // Velocidad de la bola en horizontal
+    public float lifeTime = 2f; // Tiempo antes de destruirse
+    public bool left; // Dirección: true izquierda, false derecha
+
     void Start()
     {
-        Destroy(gameObject, lifeTime);//Destruye el objeto despues de "lifeTime" segundos, evitando objetos innecesarios en la escena
+        //  Reproducimos el sonido cuando la bala aparece (se dispara)
+        if (GameAudioManager.Instance != null)
+        {
+            GameAudioManager.Instance.PlayPlantBulletShootSound();
+        }
+
+        // ⏱ Destruimos la bala después de un tiempo para no saturar la escena
+        Destroy(gameObject, lifeTime);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (left)//Si la variable es "left" es verdadera el objeto se mueve hacia la izquierda
-        {//Movimiento hacia la izquierda teniendo en cuenta el tiempo entre frames
+        // Si la bala va hacia la izquierda
+        if (left)
+        {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
-        else
-        {//Si "left" es falsa, se mueve hacia la derecha
+        else // Si va hacia la derecha
+        {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
     }

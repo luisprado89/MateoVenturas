@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8869755588221161269}
-  - component: {fileID: 6627525848035200593}
   - component: {fileID: 4690225367780812015}
   m_Layer: 0
   m_Name: AudioController
@@ -30,22 +29,76 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3454255959057545078}
+  - {fileID: 3676762185537403097}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &6627525848035200593
-AudioSource:
+--- !u!114 &4690225367780812015
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995249375187325123}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169e256dd2dcc5541a543a18c950fe89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameAudioManager
+  musicAudioSource: {fileID: 0}
+  sfxAudioSource: {fileID: 0}
+  music: {fileID: 8300000, guid: 731c2511262073f46af9af942eb93c71, type: 3}
+  powerUpActiveLoop: {fileID: 8300000, guid: aa72e37291b79a34eb30645df6b49e97, type: 3}
+  fruitCollectedSound: {fileID: 8300000, guid: 25091a0e483d83d4c8c80ce5a2ca9f9d, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 61af8ea381b7eda4eb9bdff40fbc721c, type: 3}
+  powerUpPickupSound: {fileID: 8300000, guid: 4e08b75ec009f86408b6905c90de0e78, type: 3}
+  plantBulletShootSound: {fileID: 8300000, guid: 88cd38a89cab3a143aae8c0bf9b41564, type: 3}
+--- !u!1 &1679282593005609839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3454255959057545078}
+  - component: {fileID: 3304268080176972608}
+  m_Layer: 0
+  m_Name: MusicSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3454255959057545078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679282593005609839}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8869755588221161269}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &3304268080176972608
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679282593005609839}
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
@@ -130,19 +183,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4690225367780812015
-MonoBehaviour:
+--- !u!1 &4177195336120020040
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995249375187325123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 169e256dd2dcc5541a543a18c950fe89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameAudioManager
-  audioSource: {fileID: 6627525848035200593}
-  music: {fileID: 8300000, guid: 731c2511262073f46af9af942eb93c71, type: 3}
-  fruitCollectedSound: {fileID: 8300000, guid: 25091a0e483d83d4c8c80ce5a2ca9f9d, type: 3}
-  buttonClickSound: {fileID: 8300000, guid: 61af8ea381b7eda4eb9bdff40fbc721c, type: 3}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3676762185537403097}
+  m_Layer: 0
+  m_Name: SfxSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3676762185537403097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177195336120020040}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8869755588221161269}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

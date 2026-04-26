@@ -1,80 +1,109 @@
 using UnityEngine;
 
-// Clase que gestiona todos los sonidos y la música del juego utilizando el patrón Singleton
+// Clase que gestiona todos los sonidos y la música del juego utilizando Singleton
 public class GameAudioManager : MonoBehaviour
 {
-    public static GameAudioManager Instance; // Singleton para acceder al GameAudioManager desde cualquier parte del juego
+    public static GameAudioManager Instance; // Instancia global del GameAudioManager
 
-    public AudioSource audioSource; // Componente AudioSource compartido para reproducir sonidos y música
-    public AudioClip music; // Clip de audio para la música de fondo
-    public AudioClip fruitCollectedSound; // Clip de audio para el sonido de recolectar fruta
-    public AudioClip buttonClickSound; // Clip de audio para el sonido de clic de botón
+    public AudioSource musicAudioSource; // AudioSource para música de fondo y música de power-up
+    public AudioSource sfxAudioSource; // AudioSource para sonidos cortos
 
-    private bool isMuted = false; // Variable para controlar si el juego está muteado o no
+    public AudioClip music; // Música normal del juego
+    public AudioClip powerUpActiveLoop; // Música que suena mientras el power-up está activo
+
+    public AudioClip fruitCollectedSound; // Sonido al recoger fruta
+    public AudioClip buttonClickSound; // Sonido de botón
+    public AudioClip powerUpPickupSound; // Sonido al recoger el power-up
+    public AudioClip plantBulletShootSound; // Sonido del disparo de la planta
+
+    private bool isMuted = false; // Indica si el juego está silenciado
 
     private void Awake()
     {
-        // Configurar el Singleton para que solo exista una instancia de GameAudioManager
-        if (Instance == null)
+        if (Instance == null) // Si no existe otro GameAudioManager
         {
-            Instance = this; // Asignar esta instancia como la única
-            DontDestroyOnLoad(gameObject); // Evitar que este objeto se destruya al cambiar de escena
+            Instance = this; // Esta instancia será la principal
+            DontDestroyOnLoad(gameObject); // No se destruye al cambiar de escena
         }
-        else
+        else // Si ya existe otro GameAudioManager
         {
-            Destroy(gameObject); // Destruir duplicados si ya existe una instancia
+            Destroy(gameObject); // Destruye este duplicado
         }
     }
 
     private void Start()
     {
-        AudioListener.volume = 1f; // Al iniciar el juego dejamos el sonido activado
-        PlayMusic(); // Reproducir la música de fondo al inicio del juego
+        AudioListener.volume = 1f; // Activa el volumen general del juego
+        PlayMusic(); // Empieza la música normal
     }
 
-    // Método para activar o desactivar el mute global del juego
     public void ToggleMute()
     {
-        isMuted = !isMuted; // Cambiamos el estado actual del sonido
-
-        AudioListener.volume = isMuted ? 0f : 1f; // Si está muteado se silencia todo el juego, si no se reactiva el sonido
+        isMuted = !isMuted; // Cambia el estado de mute
+        AudioListener.volume = isMuted ? 0f : 1f; // Silencia o activa todo el audio
     }
 
-    // Método para consultar desde otros scripts si el sonido está muteado
     public bool IsMuted()
     {
-        return isMuted; // Devuelve el estado actual del mute
+        return isMuted; // Devuelve si el juego está muteado
     }
 
-    // Método para reproducir la música de fondo
     public void PlayMusic()
     {
-        // Verificar que el AudioSource y el clip de música estén asignados
-        if (audioSource != null && music != null)
+        if (musicAudioSource != null && music != null) // Comprueba que existe AudioSource y música
         {
-            audioSource.clip = music; // Asignar el clip de música al AudioSource
-            audioSource.loop = true; // Configurar la música para que se reproduzca en bucle
-            audioSource.Play(); // Iniciar la reproducción de la música
+            musicAudioSource.Stop(); // Detiene cualquier música anterior
+            musicAudioSource.clip = music; // Asigna la música normal
+            musicAudioSource.loop = true; // Activa bucle
+            musicAudioSource.Play(); // Reproduce música normal
         }
     }
 
-    // Método para reproducir el sonido de recolectar fruta
+    public void StartPowerUpMusic()
+    {
+        if (!isMuted && musicAudioSource != null && powerUpActiveLoop != null) // Comprueba que puede reproducirse
+        {
+            musicAudioSource.Stop(); // Detiene la música normal
+            musicAudioSource.clip = powerUpActiveLoop; // Asigna la música del power-up
+            musicAudioSource.loop = true; // La reproduce en bucle
+            musicAudioSource.Play(); // Empieza la música del power-up
+        }
+    }
+
+    public void StopPowerUpMusic()
+    {
+        PlayMusic(); // Vuelve a reproducir la música normal
+    }
+
     public void PlayFruitCollectedSound()
     {
-        // Verificar que el juego no esté muteado y que el AudioSource y el clip de sonido estén asignados
-        if (!isMuted && audioSource != null && fruitCollectedSound != null)
+        if (!isMuted && sfxAudioSource != null && fruitCollectedSound != null) // Comprueba sonido
         {
-            audioSource.PlayOneShot(fruitCollectedSound); // Reproducir el sonido de recolectar fruta
+            sfxAudioSource.PlayOneShot(fruitCollectedSound); // Reproduce sonido de fruta
         }
     }
 
-    // Método para reproducir el sonido de clic de botón
     public void PlayButtonClickSound()
     {
-        // Verificar que el juego no esté muteado y que el AudioSource y el clip de sonido estén asignados
-        if (!isMuted && audioSource != null && buttonClickSound != null)
+        if (!isMuted && sfxAudioSource != null && buttonClickSound != null) // Comprueba sonido
         {
-            audioSource.PlayOneShot(buttonClickSound); // Reproducir el sonido de clic de botón
+            sfxAudioSource.PlayOneShot(buttonClickSound); // Reproduce sonido de botón
+        }
+    }
+
+    public void PlayPowerUpPickupSound()
+    {
+        if (!isMuted && sfxAudioSource != null && powerUpPickupSound != null) // Comprueba sonido
+        {
+            sfxAudioSource.PlayOneShot(powerUpPickupSound); // Reproduce sonido al recoger power-up
+        }
+    }
+
+    public void PlayPlantBulletShootSound()
+    {
+        if (!isMuted && sfxAudioSource != null && plantBulletShootSound != null) // Comprueba sonido
+        {
+            sfxAudioSource.PlayOneShot(plantBulletShootSound); // Reproduce sonido del disparo
         }
     }
 }

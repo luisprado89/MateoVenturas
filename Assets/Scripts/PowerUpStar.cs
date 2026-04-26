@@ -2,17 +2,26 @@ using UnityEngine;
 
 public class PowerUpStar : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)// Método que se llama cuando otro collider entra en contacto con el collider del power-up
+    private void OnTriggerEnter2D(Collider2D collision) // Se ejecuta cuando algo entra en el trigger
     {
-        if (collision.CompareTag("Player"))// Si el objeto que colisiona tiene la etiqueta "Player", activar el power-up para el jugador
+        if (collision.CompareTag("Player")) // Comprobamos que quien entra es el jugador
         {
-            PlayerPowerUp playerPowerUp = collision.GetComponent<PlayerPowerUp>();// Obtener la referencia al componente PlayerPowerUp del jugador para activar el power-up
+            // Obtenemos el script del jugador que gestiona el power-up
+            PlayerPowerUp playerPowerUp = collision.GetComponent<PlayerPowerUp>();
 
-            if (playerPowerUp != null)// Verificar si el jugador tiene el componente PlayerPowerUp antes de intentar activar el power-up para evitar errores
-            {// Si el jugador tiene el componente PlayerPowerUp, llamar al método para activar el power-up
-                playerPowerUp.ActivatePowerUp();
+            // Si el jugador tiene el script, activamos el power-up
+            if (playerPowerUp != null)
+            {
+                playerPowerUp.ActivatePowerUp(); // Activa color + lógica de invencibilidad
             }
-            // Después de activar el power-up para el jugador, destruir el objeto del power-up para que no pueda ser recogido nuevamente
+
+            //  Reproducimos el sonido de recoger el power-up
+            if (GameAudioManager.Instance != null)
+            {
+                GameAudioManager.Instance.PlayPowerUpPickupSound();
+            }
+
+            //  Destruimos el objeto para que no pueda recogerse otra vez
             Destroy(gameObject);
         }
     }
