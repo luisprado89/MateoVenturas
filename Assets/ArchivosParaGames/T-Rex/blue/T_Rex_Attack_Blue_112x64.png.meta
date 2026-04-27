@@ -158,10 +158,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 113
-        height: 57
+        width: 112
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_1
       rect:
         serializedVersion: 2
-        x: 111
+        x: 112
         y: 0
         width: 112
-        height: 55
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_2
       rect:
         serializedVersion: 2
-        x: 223
+        x: 224
         y: 0
-        width: 114
-        height: 56
+        width: 112
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -222,12 +222,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_3
       rect:
         serializedVersion: 2
-        x: 335
+        x: 336
         y: 0
         width: 112
-        height: 55
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_4
       rect:
         serializedVersion: 2
-        x: 446
+        x: 448
         y: 0
-        width: 115
-        height: 61
+        width: 112
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_5
       rect:
         serializedVersion: 2
-        x: 559
+        x: 560
         y: 0
-        width: 114
-        height: 55
+        width: 112
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -288,12 +288,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_6
       rect:
         serializedVersion: 2
-        x: 671
+        x: 672
         y: 0
-        width: 114
-        height: 54
+        width: 112
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -310,12 +310,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_7
       rect:
         serializedVersion: 2
-        x: 783
+        x: 784
         y: 0
-        width: 113
-        height: 55
+        width: 112
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -332,12 +332,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_8
       rect:
         serializedVersion: 2
-        x: 895
+        x: 896
         y: 0
-        width: 114
-        height: 56
+        width: 112
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -354,12 +354,12 @@ TextureImporter:
       name: T_Rex_Attack_Blue_112x64_9
       rect:
         serializedVersion: 2
-        x: 1007
+        x: 1008
         y: 0
-        width: 113
-        height: 57
+        width: 112
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -372,11 +372,99 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: T_Rex_Attack_Blue_112x64_10
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 112
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3012451db9fa04d9bb849c5e8626a0
+      internalID: -226690109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Rex_Attack_Blue_112x64_11
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 0
+        width: 112
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ef9bf442c9d6a44985540c05c02496
+      internalID: 2059810307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Rex_Attack_Blue_112x64_12
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 112
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6389ac316ffa1b4fb7cb1ff47bccb2a
+      internalID: -2078297343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Rex_Attack_Blue_112x64_13
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 0
+        width: 112
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fc18b129b95ea45b24e0316c347786
+      internalID: 1170659822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4393f01ed829ba6478c86859174d474c
     internalID: 0
     vertices: []
     indices: 
@@ -384,10 +472,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":112.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       T_Rex_Attack_Blue_112x64_0: 4221059931493760320
       T_Rex_Attack_Blue_112x64_1: -7247781564453911371
+      T_Rex_Attack_Blue_112x64_10: -226690109
+      T_Rex_Attack_Blue_112x64_11: 2059810307
+      T_Rex_Attack_Blue_112x64_12: -2078297343
+      T_Rex_Attack_Blue_112x64_13: 1170659822
       T_Rex_Attack_Blue_112x64_2: -3755930239526167635
       T_Rex_Attack_Blue_112x64_3: -1527226428049214683
       T_Rex_Attack_Blue_112x64_4: 3980554723028886153
