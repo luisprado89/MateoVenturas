@@ -318,7 +318,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
   animator: {fileID: 3847679476075049439}
-  hearts: []
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  canvasGameOver: {fileID: 0}
+  countdownText: {fileID: 0}
 --- !u!114 &3045412730573742484
 MonoBehaviour:
   m_ObjectHideFlags: 0

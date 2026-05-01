@@ -1,18 +1,30 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
+using System.Collections; // Permite usar corrutinas
+using UnityEngine; // Importa las herramientas principales de Unity
+using UnityEngine.SceneManagement; // Permite cambiar o recargar escenas
+using TMPro; // Permite usar textos TextMeshPro
 
 public class PlayerRespawn : MonoBehaviour
 {
-    private float checkPointPositionX, checkPointPositionY; // Variables para almacenar las posiciones X e Y  del checkpoint
-    public Animator animator; // Referencia al componente Animator para controlar las animaciones del jugador
-    public GameObject[] hearts; // Array de GameObjects que representan los corazones de vida del jugador
-    private int lifes = 3; // Variable para almacenar el número de vidas del jugador
+    private float checkPointPositionX, checkPointPositionY; // Variables para almacenar la posición X e Y del checkpoint
+
+    public Animator animator; // Referencia al Animator para controlar las animaciones del jugador
+
+    public GameObject[] hearts; // Array de corazones que representan las vidas del jugador en la UI
+
+    private int lifes = 3; // Número actual de vidas del jugador
+
+    public GameObject canvasGameOver; // Canvas completo del Game Over que estará desactivado al inicio
+
+    public TMP_Text countdownText; // Texto que mostrará la cuenta atrás para volver al menú
+
+    private bool isDead = false; // Evita que el Game Over se active varias veces
+
     void Start()
     {
-        // Si el array de corazones está asignado, el número de vidas será igual al número de corazones
-        if (hearts != null)
+        // Si el array de corazones está asignado
+        if (hearts != null && hearts.Length > 0)
         {
-            lifes = hearts.Length;
+            lifes = hearts.Length; // Las vidas serán igual al número de corazones
         }
         else
         {
@@ -20,38 +32,103 @@ public class PlayerRespawn : MonoBehaviour
             lifes = 0;
         }
 
-        if (PlayerPrefs.GetFloat("checkPointPositionX") != 0) // Verificar si las posiciones del checkpoint han sido guardadas previamente
+        // Si el canvas de Game Over está asignado
+        if (canvasGameOver != null)
         {
+            canvasGameOver.SetActive(false); // Ocultar Game Over al iniciar la escena
+        }
 
-            transform.position = (new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositionY"))); // Teletransportar al jugador a la posición del checkpoint al iniciar el juego
+        // Si existe una posición guardada de checkpoint
+        if (PlayerPrefs.HasKey("CheckPointPositionX"))
+        {
+            checkPointPositionX = PlayerPrefs.GetFloat("CheckPointPositionX");
+            checkPointPositionY = PlayerPrefs.GetFloat("CheckPointPositionY");
+
+            transform.position = new Vector2(checkPointPositionX, checkPointPositionY);
         }
     }
+
     private void CheckLife()
     {
-        // Si al jugador todavía le quedan vidas, desactivamos el corazón correspondiente
+        // Si la vida está dentro del rango de corazones
         if (lifes >= 0 && lifes < hearts.Length)
         {
-            hearts[lifes].SetActive(false); // Ocultar el corazón correspondiente a la vida perdida
-            animator.Play("Hit"); // Reproducir la animación de daño
+            hearts[lifes].SetActive(false); // Ocultar el corazón que corresponde a la vida perdida
+            animator.Play("Hit"); // Reproducir animación de daño
         }
 
-        // Si el jugador ya no tiene vidas, recargamos la escena actual
-        if (lifes <= 0)
+        // Si el jugador se queda sin vidas y todavía no se activó el Game Over
+        if (lifes <= 0 && !isDead)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            isDead = true; // Marcar al jugador como muerto para evitar repetir esta lógica
+
+            Debug.Log("GAME OVER");
+
+            canvasGameOver.SetActive(true); // Activar el CanvasGameOver
+
+            Time.timeScale = 0f; // Pausar el juego
+
+            StartCoroutine(ReturnToMenuCountdown()); // Iniciar cuenta atrás para volver al menú
         }
+    }
+
+    public void PlayerDamaged()
+    {
+        // Evita que siga restando vidas si ya está en 0
+        if (lifes <= 0) return;
+
+        lifes--; // Restar una vida
+        CheckLife(); // Revisar corazones y muerte
+    }
+
+    public bool AddLife()
+    {
+        // Si ya tiene todas las vidas, no suma nada
+        if (lifes >= hearts.Length)
+        {
+            Debug.Log("Vida máxima. No se puede recoger el corazón.");
+            return false;
+        }
+
+        hearts[lifes].SetActive(true); // Activar el corazón que corresponde a la nueva vida
+
+        lifes++; // Sumar una vida
+
+        Debug.Log("Vida sumada. Vidas actuales: " + lifes);
+
+        return true; // Indica que la vida sí se sumó
+    }
+
+    private IEnumerator ReturnToMenuCountdown()
+    {
+        int timeLeft = 10; // Tiempo inicial de la cuenta atrás
+
+        while (timeLeft > 0)
+        {
+            countdownText.text = "Volviendo al menú en " + timeLeft + "..."; // Actualizar texto
+
+            yield return new WaitForSecondsRealtime(1f); // Esperar 1 segundo real aunque el juego esté pausado
+
+            timeLeft--; // Restar 1 segundo
+        }
+
+        Time.timeScale = 1f; // Reanudar el tiempo antes de cambiar de escena
+
+        SceneManager.LoadScene(0); // Cargar el menú principal, suponiendo que está en Build Index 0
+    }
+
+    public void Retry()
+    {
+        Time.timeScale = 1f; // Reanudar el tiempo del juego
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Recargar la escena actual
     }
 
     public void ReachedCheckPoint(float x, float y)
     {
-        PlayerPrefs.SetFloat("CheckPointPositionX", x); // Guardar la posición X del checkpoint usando PlayerPrefs
-        PlayerPrefs.SetFloat("CheckPointPositionY", y); // Guardar la posición Y del checkpoint usando PlayerPrefs
-        Debug.Log("Checkpoint reached!"); // Imprimir un mensaje en la consola para indicar que se ha alcanzado el checkpoint
-    }
-    public void PlayerDamaged()
-    {
-        lifes--;// Reducir el número de vidas del jugador en 1 al recibir daño
-        CheckLife();// Llamar al método CheckLife para verificar si el jugador ha perdido todas sus vidas y tomar las acciones correspondientes
-    }
+        PlayerPrefs.SetFloat("CheckPointPositionX", x); // Guardar X del checkpoint
+        PlayerPrefs.SetFloat("CheckPointPositionY", y); // Guardar Y del checkpoint
 
+        Debug.Log("Checkpoint reached!");
+    }
 }

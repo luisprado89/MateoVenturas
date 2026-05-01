@@ -4,34 +4,70 @@ using TMPro;
 
 public class FruitManager : MonoBehaviour
 {
-    public TMP_Text levelCleared;
-    public GameObject transition;
-    public TMP_Text totalFruits;
-    public TMP_Text fruitsCollected;
-    private int totalFruitsInLevel;
-    public PlayerRespawn playerRespawn; // Referencia al script PlayerRespawn
+    public TMP_Text levelCleared; // Texto que aparece al completar el nivel
+    public GameObject transition; // Grupo de transición (el que has creado)
+    public TMP_Text totalFruits; // Texto total frutas
+    public TMP_Text fruitsCollected; // Texto frutas recogidas
+
+    private int totalFruitsInLevel; // Total de frutas en el nivel
+
+    public PlayerRespawn playerRespawn; // Referencia al jugador
+
+    private bool levelCompleted = false; //  IMPORTANTE: evita que se ejecute varias veces
 
     void Start()
     {
         // Contar todas las frutas activas al inicio
         totalFruitsInLevel = CountActiveFruits();
+
+        // Asegurarse de que la transición empieza apagada
+        transition.SetActive(false);
     }
 
     private void Update()
     {
         AllFruitCollected();
+
+        // Actualizar UI
         totalFruits.text = totalFruitsInLevel.ToString();
         fruitsCollected.text = CountActiveFruits().ToString();
     }
 
     public void AllFruitCollected()
     {
-        if (CountActiveFruits() == 0)
+        // Solo entra si el nivel todavía no se ha completado y no quedan frutas activas
+        if (!levelCompleted && CountActiveFruits() == 0)
         {
-            Debug.Log("No quedan frutas");
-            levelCleared.gameObject.SetActive(true); // Activar el texto
-            transition.SetActive(true);
-            Invoke("ChangeScene", 2); // Esperar 2 segundos antes de cambiar de escena
+            levelCompleted = true; // Evita que esta lógica se ejecute muchas veces
+
+            Debug.Log("No quedan frutas"); // Mensaje en consola para comprobar que funciona
+
+            // Guardamos si esta escena es la última del Build Settings
+            bool isLastLevel = SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1;
+
+            // Si es el último nivel, mostramos mensaje final de victoria
+            if (isLastLevel)
+            {
+                levelCleared.text = "¡ENHORABUENA!\nHAS COMPLETADO LA AVENTURA\n\nHAS SUPERADO TODOS LOS DESAFÍOS\nY RECOGIDO TODAS LAS FRUTAS\n\n¡ERES UN VERDADERO MAESTRO FRUTÍCOLA!";
+            }
+            else
+            {
+                levelCleared.text = "¡Has recogido todas las frutas!";
+            }
+
+            levelCleared.gameObject.SetActive(true); // Mostrar el texto
+
+            transition.SetActive(true); // Activar TransitionAnimationGroup
+
+            // Si es el último nivel, damos más tiempo para leer el mensaje final
+            if (isLastLevel)
+            {
+                Invoke("ChangeScene", 8f); // Espera 8 segundos antes de volver al menú
+            }
+            else
+            {
+                Invoke("ChangeScene", 2f); // Espera 2 segundos antes de pasar al siguiente nivel
+            }
         }
     }
 
@@ -39,10 +75,9 @@ public class FruitManager : MonoBehaviour
     {
         int activeFruits = 0;
 
-        // Recorrer todos los hijos del objeto FruitManager
         foreach (Transform child in transform)
         {
-            if (child.gameObject.activeSelf) // Verificar si el hijo está activo
+            if (child.gameObject.activeSelf)
             {
                 activeFruits++;
             }
@@ -53,18 +88,12 @@ public class FruitManager : MonoBehaviour
 
     void ChangeScene()
     {
-        // Guardar las vidas actuales del jugador
-        //playerRespawn.SaveCurrentLives();
-
-        // Verificar si el nivel actual es el último nivel
         if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
-            // Si es el último nivel, cargar el Main Menu (índice 0)
             SceneManager.LoadScene(0);
         }
         else
         {
-            // Si no es el último nivel, cargar el siguiente nivel
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
