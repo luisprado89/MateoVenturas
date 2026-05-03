@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // Necesario para detectar cuando se carga una nueva escena y cortar el power-up
 
 // Clase que gestiona todos los sonidos y la música del juego utilizando Singleton
 public class GameAudioManager : MonoBehaviour
@@ -24,6 +25,9 @@ public class GameAudioManager : MonoBehaviour
         {
             Instance = this; // Esta instancia será la principal
             DontDestroyOnLoad(gameObject); // No se destruye al cambiar de escena
+
+            // Se suscribe al evento de Unity que avisa cuando se carga una escena nueva
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else // Si ya existe otro GameAudioManager
         {
@@ -35,6 +39,18 @@ public class GameAudioManager : MonoBehaviour
     {
         AudioListener.volume = 1f; // Activa el volumen general del juego
         PlayMusic(); // Empieza la música normal
+    }
+
+    private void OnDestroy()
+    {
+        // Evita que el evento quede registrado si este objeto se destruye
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Cuando se carga una escena nueva, si estaba sonando el power-up, se corta
+        StopPowerUpMusicOnSceneChange();
     }
 
     public void ToggleMute()
@@ -72,7 +88,16 @@ public class GameAudioManager : MonoBehaviour
 
     public void StopPowerUpMusic()
     {
-        PlayMusic(); // Vuelve a reproducir la música normal
+        PlayMusic(); // Cuando termina el power-up dentro del mismo nivel, vuelve la música normal
+    }
+
+    private void StopPowerUpMusicOnSceneChange()
+    {
+        if (musicAudioSource != null && musicAudioSource.clip == powerUpActiveLoop) // Comprueba si estaba sonando la música del power-up
+        {
+            musicAudioSource.Stop(); // Detiene la música del power-up
+            musicAudioSource.clip = null; // Limpia el clip para que no siga asignado al cambiar de nivel
+        }
     }
 
     public void PlayFruitCollectedSound()

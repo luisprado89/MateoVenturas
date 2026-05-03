@@ -9,9 +9,10 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        if (iconMute != null) // Comprobamos que el icono esté asignado
+        if (iconMute != null && GameAudioManager.Instance != null)// Comprobamos que el icono y el gestor de audio existan
         {
-            iconMute.SetActive(false); // Ocultamos el icono al inicio
+            // Al cargar la escena, el icono se sincroniza con el estado real del audio
+            iconMute.SetActive(GameAudioManager.Instance.IsMuted());
         }
     }
 
