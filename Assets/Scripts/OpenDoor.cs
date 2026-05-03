@@ -1,65 +1,82 @@
-using TMPro;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro; // Permite usar textos TMP (TextMeshPro)
+using UnityEngine; // Importa las funciones principales de Unity
+using UnityEngine.SceneManagement; // Permite cambiar de escena
 
 public class OpenDoor : MonoBehaviour
 {
-    public TMP_Text text; // Referencia al componente de texto para mostrar el mensaje de Presiona la tecla E para entrar
-    public string levelName; // Nombre del nivel al que se desea cargar
-    private bool inDoor = false; // Variable para verificar si el jugador está dentro del área de la puerta
-    // Temporizador
-    public float waitTime = 5f;// Tiempo de espera en segundos
-    private float timer = 0f;// Variable para verificar si el temporizador ha terminado
+    public TMP_Text text; // Referencia al texto que muestra el mensaje para entrar por la puerta
+    public string levelName; // Nombre del nivel que se cargará al entrar por la puerta
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public GameObject titleGame; // Referencia al título del menú MateoVenturas para ocultarlo cuando aparece el mensaje de la puerta
+
+    private bool inDoor = false; // Indica si el jugador está dentro del área de la puerta
+
+    public float waitTime = 5f; // Tiempo de espera en segundos antes de entrar automáticamente por la puerta
+    private float timer = 0f; // Temporizador que cuenta cuánto tiempo lleva el jugador dentro de la puerta
+
+    private void OnTriggerEnter2D(Collider2D collision) // Se ejecuta cuando otro Collider2D entra en el área de la puerta
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player")) // Comprueba si el objeto que entra tiene la etiqueta Player
         {
-            inDoor = true; // El jugador ha entrado en el área de la puerta
-            timer = 0f; // Reiniciar el temporizador
-            if (text != null)// Verificar si el componente de texto está asignado
+            inDoor = true; // Marcamos que el jugador está dentro del área de la puerta
+            timer = 0f; // Reiniciamos el temporizador al entrar
+
+            if (text != null) // Comprobamos que el texto esté asignado en el Inspector
             {
-                text.gameObject.SetActive(true); // Mostrar el mensaje de Presiona la tecla E para entrar
+                text.gameObject.SetActive(true); // Mostramos el mensaje de "Pulsa E para entrar"
             }
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            inDoor = false;
-            timer = 0f; // Reiniciar el temporizador
-            if (text != null)// Verificar si el componente de texto está asignado
+
+            if (titleGame != null) // Comprobamos que el título del juego esté asignado en el Inspector
             {
-                text.gameObject.SetActive(false);// Ocultar el mensaje de Presiona la tecla E para entrar
+                titleGame.SetActive(false); // Ocultamos el título MateoVenturas para que no se solape con el mensaje de la puerta
             }
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision) // Se ejecuta cuando otro Collider2D sale del área de la puerta
     {
-        if (inDoor)// Verificar si el jugador está dentro del área de la puerta
+        if (collision.CompareTag("Player")) // Comprueba si el objeto que sale tiene la etiqueta Player
         {
-            timer += Time.deltaTime;// Incrementar el temporizador
-            if (timer >= waitTime)// Verificar si el temporizador ha terminado
+            inDoor = false; // Marcamos que el jugador ya no está dentro del área de la puerta
+            timer = 0f; // Reiniciamos el temporizador al salir
+
+            if (text != null) // Comprobamos que el texto esté asignado en el Inspector
             {
-                EnterDoor();// Cargar el nivel automáticamente después de que el temporizador haya terminado
+                text.gameObject.SetActive(false); // Ocultamos el mensaje de "Pulsa E para entrar"
             }
 
-
-            if (Input.GetKeyDown(KeyCode.E))// Verificar si se presiona la tecla E para entrar
+            if (titleGame != null) // Comprobamos que el título del juego esté asignado en el Inspector
             {
-                EnterDoor();// Cargar el nivel al presionar la tecla E
+                titleGame.SetActive(true); // Volvemos a mostrar el título MateoVenturas cuando el jugador sale de la puerta
             }
         }
     }
 
-    void EnterDoor()// Método para cargar el nivel
+    void Update() // Se ejecuta una vez por frame
     {
-        if (text != null)// Verificar si el componente de texto está asignado
-            text.gameObject.SetActive(false);// Ocultar el mensaje de Presiona la tecla E para entrar
+        if (inDoor) // Comprueba si el jugador está dentro del área de la puerta
+        {
+            timer += Time.deltaTime; // Aumenta el temporizador con el tiempo real transcurrido
 
-        SceneManager.LoadScene(levelName);// Cargar el nivel especificado por el nombre
+            if (timer >= waitTime) // Comprueba si el jugador ha esperado el tiempo suficiente dentro de la puerta
+            {
+                EnterDoor(); // Carga el nivel automáticamente
+            }
+
+            if (Input.GetKeyDown(KeyCode.E)) // Comprueba si el jugador pulsa la tecla E
+            {
+                EnterDoor(); // Carga el nivel al pulsar E
+            }
+        }
+    }
+
+    void EnterDoor() // Método encargado de cargar el nivel correspondiente
+    {
+        if (text != null) // Comprobamos que el texto esté asignado en el Inspector
+        {
+            text.gameObject.SetActive(false); // Ocultamos el mensaje antes de cambiar de escena
+        }
+
+        SceneManager.LoadScene(levelName); // Carga la escena indicada en levelName
     }
 }
