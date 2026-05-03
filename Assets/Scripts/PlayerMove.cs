@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
     public float runSpeed = 2; // Velocidad de movimiento horizontal del jugador
     // ================= SALTO =================
     public float jumpSpeed = 4; // Velocidad de salto del jugador
-    public float doubleJumpSpeed = 3; // Velocidad de salto para el doble salto del jugador
+    public float doubleJumpSpeed = 4; // Velocidad de salto para el doble salto del jugador
     private bool canDoubleJump; // Variable para controlar si el jugador puede realizar un doble salto
     // ================= FÍSICAS =================
     Rigidbody2D rb2d; // Referencia al componente Rigidbody2D del jugador

@@ -11,32 +11,34 @@ public class JumpDamage : MonoBehaviour
 
     private bool isDead = false; // Variable para evitar que la muerte se ejecute varias veces (bug de partículas en bucle)
 
-    private void OnCollisionEnter2D(Collision2D collision) // Método que se ejecuta cuando ocurre una colisión física
+    private void OnTriggerEnter2D(Collider2D collision)// Este método se activa cuando el jugador pisa al enemigo (trigger del collider de daño)
     {
-        if (isDead) return; // Si el enemigo ya está muerto, no hacemos nada más
+        if (isDead) return;// Si el enemigo ya está muerto, no hacemos nada (evita bugs de partículas en bucle)
 
-        if (collision.gameObject.CompareTag("Player")) // Comprobamos si el objeto que colisiona es el jugador
+        if (collision.CompareTag("Player"))// Comprobamos que el objeto que entra en el trigger es el Player
         {
-            PlayerPowerUp powerUp = collision.gameObject.GetComponent<PlayerPowerUp>(); // Obtenemos el script del power-up del jugador
+            PlayerPowerUp powerUp = collision.GetComponent<PlayerPowerUp>();// Buscamos si el Player tiene el script PlayerPowerUp para comprobar si tiene el power-up activo
 
-            // SI EL JUGADOR TIENE POWER-UP ACTIVO
-            if (powerUp != null && powerUp.powerUpActive)
+            if (powerUp != null && powerUp.powerUpActive)// Si el Player tiene el power-up activo, matamos al enemigo usando su propio sistema (sin rebote ni daño al jugador)
             {
-                KillByPowerUp(); // Matamos al enemigo directamente
-                return; // Salimos para evitar que haga el resto de lógica (rebote, daño, etc.)
+                KillByPowerUp();// Llamamos al método de muerte directa del enemigo
+                return;// Salimos para que el jugador NO reciba daño ni rebote
             }
 
-            // SI NO TIENE POWER-UP → comportamiento normal
-            Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>(); // Obtenemos el Rigidbody del jugador
+            Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();// Obtenemos el Rigidbody2D del Player para comprobar si está cayendo (solo así cuenta como pisotón)
 
-            if (playerRb != null) // Comprobamos que existe para evitar errores
+            // Solo cuenta como pisotón si el jugador está cayendo
+            if (playerRb != null && playerRb.linearVelocity.y < 0)// Si el jugador está cayendo (velocity.y < 0), entonces es un pisotón válido
             {
-                // Aplicamos rebote hacia arriba al jugador (efecto Mario al pisar enemigo)
+                // Rebote hacia arriba
                 playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, jumpForce);
-            }
 
-            LosseLifeAndHit(); // Quitamos una vida al enemigo y activamos animación de golpe
-            CheckLife(); // Comprobamos si el enemigo debe morir
+                // Quitamos una vida al enemigo
+                LosseLifeAndHit();
+
+                // Comprobamos si debe morir
+                CheckLife();
+            }
         }
     }
 
