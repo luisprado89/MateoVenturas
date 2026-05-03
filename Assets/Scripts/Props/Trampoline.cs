@@ -3,7 +3,7 @@ using UnityEngine;
 public class Trampoline : MonoBehaviour
 {
     public Animator animator; // Referencia al componente Animator para controlar la animación de la trampolín
-    public float jumpForce = 2f; // Fuerza con la que el jugador será impulsado hacia arriba
+    public float jumpForce = 9f; // Fuerza con la que el jugador será impulsado hacia arriba
 
     // Método que se ejecuta cuando otro objeto colisiona con la trampolín
     private void OnCollisionEnter2D(Collision2D collision)

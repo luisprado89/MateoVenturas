@@ -1,13 +1,18 @@
+using System.Collections; // Necesario para usar corrutinas
 using UnityEngine;
 
 public class DamageObject : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // ================= COMPROBAR PLAYER =================
+
         // Comprobamos si el objeto que entra en el trigger es el Player
         if (collision.transform.CompareTag("Player"))
         {
-            // Obtenemos el Rigidbody2D del Player para saber si está cayendo
+            // ================= DETECTAR SI ESTÁ CAYENDO =================
+
+            // Obtenemos el Rigidbody2D del Player para saber su velocidad vertical
             Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();
 
             // Si el jugador está cayendo, NO le hacemos daño
@@ -16,6 +21,8 @@ public class DamageObject : MonoBehaviour
             {
                 return;
             }
+
+            // ================= POWER-UP =================
 
             // Buscamos si el Player tiene el script PlayerPowerUp
             PlayerPowerUp powerUp = collision.GetComponent<PlayerPowerUp>();
@@ -36,16 +43,16 @@ public class DamageObject : MonoBehaviour
                 return;
             }
 
-            // Si NO tiene power-up y NO está cayendo, el jugador recibe daño
-            collision.transform.SetParent(null);
+           // ================= DAÑO AL PLAYER =================
 
             Debug.Log("Player hit by damage object!");
 
+            // Obtenemos el script PlayerRespawn para aplicar el daño
             PlayerRespawn playerRespawn = collision.GetComponent<PlayerRespawn>();
 
             if (playerRespawn != null)
             {
-                playerRespawn.PlayerDamaged();
+                playerRespawn.PlayerDamaged(); // Aplicamos daño al jugador
             }
         }
     }
