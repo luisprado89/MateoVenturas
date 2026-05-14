@@ -1,4 +1,4 @@
-using UnityEngine; // Importa las herramientas principales de Unity
+using UnityEngine; 
 
 public class CameraFollow : MonoBehaviour // Script para que la cámara siga al jugador sin salirse del escenario
 {

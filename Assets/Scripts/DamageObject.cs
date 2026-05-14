@@ -1,4 +1,3 @@
-using System.Collections; // Necesario para usar corrutinas
 using UnityEngine;
 
 public class DamageObject : MonoBehaviour

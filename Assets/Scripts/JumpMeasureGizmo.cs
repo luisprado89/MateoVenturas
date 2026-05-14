@@ -12,7 +12,7 @@ public class JumpMeasureGizmo : MonoBehaviour
 
         if (col == null) return;
 
-        // 🔥 Punto REAL de los pies del jugador
+        //Punto REAL de los pies del jugador
         Vector3 start = new Vector3(
             transform.position.x,
             col.bounds.min.y,
@@ -31,7 +31,7 @@ public class JumpMeasureGizmo : MonoBehaviour
         Gizmos.DrawLine(start, start + Vector3.right * jumpDistance);
         Gizmos.DrawWireSphere(start + Vector3.right * jumpDistance, 0.08f);
 
-        // Izquierda 🔥
+        // Izquierda
         Gizmos.DrawLine(start, start + Vector3.left * jumpDistance);
         Gizmos.DrawWireSphere(start + Vector3.left * jumpDistance, 0.08f);
 

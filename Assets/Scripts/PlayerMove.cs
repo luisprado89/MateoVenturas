@@ -31,14 +31,14 @@ public class PlayerMove : MonoBehaviour
 
         // ================= ANIMACIONES =================
 
-        // Si NO está en el suelo → está saltando
+        // Si NO está en el suelo -> está saltando
         if (!CheckGround.isGrounded)// Si el jugador no está en el suelo, activar la animación de salto y desactivar la animación de correr
         {
             animator.SetBool("Jump", true);// Activar la animación de salto
             animator.SetBool("Run", false);// Desactivar la animación de correr
         }
 
-        // Si está en el suelo → reset animaciones
+        // Si está en el suelo -> reset animaciones
         if (CheckGround.isGrounded)// Si el jugador está en el suelo, desactivar las animaciones de salto, doble salto y caída
         {
             animator.SetBool("Jump", false);
@@ -46,7 +46,7 @@ public class PlayerMove : MonoBehaviour
             animator.SetBool("Falling", false);
         }
 
-        // Si cae → animación de caída
+        // Si cae -> animación de caída
         if (rb2d.linearVelocity.y < 0)// Si la velocidad vertical del jugador es menor que 0, activar la animación de caída
         {
             animator.SetBool("Falling", true);// Activar la animación de caída
@@ -114,13 +114,13 @@ public class PlayerMove : MonoBehaviour
         {
             jumpHeld = true;
 
-            // Si está en el suelo → salto normal
+            // Si está en el suelo -> salto normal
             if (CheckGround.isGrounded)
             {
                 canDoubleJump = true;
                 rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpSpeed);
             }
-            // Si está en el aire → posible doble salto
+            // Si está en el aire -> posible doble salto
             else if (canDoubleJump)
             {
                 animator.SetBool("DoubleJump", true);
