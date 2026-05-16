@@ -32,7 +32,7 @@ public class JumpDebugger : MonoBehaviour
 
             float jumpHeight = maxY - startY;
 
-            Debug.Log("ALTURA SALTO: " + jumpHeight);
+            //Debug.Log("ALTURA SALTO: " + jumpHeight);// Muestra la altura del salto en la consola
         }
     }
 }

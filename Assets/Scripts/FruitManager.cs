@@ -109,6 +109,9 @@ public class FruitManager : MonoBehaviour // Clase que controla las frutas del n
     {
         levelCompleted = true; // Marcamos el nivel como completado
 
+        ProtectPlayerAfterWin(); // Evita que el jugador pueda morir mientras aparece el mensaje/panel de victoria
+
+
         Debug.Log("Frutas necesarias recogidas"); // Mensaje de comprobación
 
         // Comprobamos si esta escena es la última del Build Settings
@@ -146,6 +149,18 @@ public class FruitManager : MonoBehaviour // Clase que controla las frutas del n
         {
             Invoke(nameof(ChangeScene), 2f);
         }
+    }
+
+    private void ProtectPlayerAfterWin()
+    {
+        // Si no tenemos referencia al PlayerRespawn, no hacemos nada
+        if (playerRespawn == null)
+        {
+            return;
+        }
+
+        // Desactivamos PlayerRespawn para impedir que se ejecute daño, muerte o Game Over tras completar el nivel
+        playerRespawn.enabled = false;
     }
 
     private int CountActiveFruits()

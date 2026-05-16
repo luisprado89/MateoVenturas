@@ -42,16 +42,23 @@ public class DamageObject : MonoBehaviour
                 return;
             }
 
-           // ================= DAÑO AL PLAYER =================
+            // ================= DAÑO AL PLAYER =================
 
-            Debug.Log("Player hit by damage object!");
+            Debug.Log("el jugador tocó el collider de daño");
 
             // Obtenemos el script PlayerRespawn para aplicar el daño
             PlayerRespawn playerRespawn = collision.GetComponent<PlayerRespawn>();
 
             if (playerRespawn != null)
             {
-                playerRespawn.PlayerDamaged(); // Aplicamos daño al jugador
+                if (!playerRespawn.enabled)
+                {
+                    Debug.Log("Daño bloqueado porque el nivel ya está completado");
+                    return;
+                }
+
+                Debug.Log("Daño aplicado al jugador");
+                playerRespawn.PlayerDamaged();
             }
         }
     }
