@@ -51242,10 +51242,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1695080030031389181, guid: 24e053f5558bbab468584765a65812fe, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3352799507910400762, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.408
@@ -51285,30 +51281,6 @@ PrefabInstance:
     - target: {fileID: 3352799507910400762, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5147270811851984235, guid: 24e053f5558bbab468584765a65812fe, type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5147270811851984235, guid: 24e053f5558bbab468584765a65812fe, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7422332645116788467, guid: 24e053f5558bbab468584765a65812fe, type: 3}
-      propertyPath: m_SortingLayer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7422332645116788467, guid: 24e053f5558bbab468584765a65812fe, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1527510519
-      objectReference: {fileID: 0}
-    - target: {fileID: 8023852839958946436, guid: 24e053f5558bbab468584765a65812fe, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8023852839958946436, guid: 24e053f5558bbab468584765a65812fe, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8371458555471998024, guid: 24e053f5558bbab468584765a65812fe, type: 3}
       propertyPath: m_Name

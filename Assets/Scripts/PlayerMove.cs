@@ -5,134 +5,148 @@ public class PlayerMove : MonoBehaviour
 {
     // ================= MOVIMIENTO =================
     public float runSpeed = 2; // Velocidad de movimiento horizontal del jugador
+
     // ================= SALTO =================
     public float jumpSpeed = 4; // Velocidad de salto del jugador
     public float doubleJumpSpeed = 4; // Velocidad de salto para el doble salto del jugador
     private bool canDoubleJump; // Variable para controlar si el jugador puede realizar un doble salto
+
     // ================= FÍSICAS =================
     Rigidbody2D rb2d; // Referencia al componente Rigidbody2D del jugador
+
     // ================= SALTO MEJORADO =================
     public bool betterJump = false; // Variable para activar o desactivar el salto mejorado
     public float fallMultiplier = 0.5f; // Multiplicador para la caída del jugador
     public float lowJumpMultiplier = 1f; // Multiplicador para el salto bajo del jugador
+
     // ================= VISUAL =================
     public SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer del jugador
     public Animator animator; // Referencia al componente Animator del jugador
+
     // ================= INPUT SYSTEM =================
-    private float moveInput; // Guardamos el movimiento horizontal
-    private bool jumpHeld; // Saber si el botón de salto está pulsado
+    private float moveInput; // Guardamos el movimiento horizontal recibido desde teclado, mando o joystick
+    private bool jumpHeld; // Guarda si el botón de salto sigue pulsado
 
     void Start()
-    {   // Obtener la referencia al componente Rigidbody2D del jugador
+    {
+        // Obtener la referencia al componente Rigidbody2D del jugador
         rb2d = GetComponent<Rigidbody2D>();
     }
+
     void Update()
     {
-
         // ================= ANIMACIONES =================
 
-        // Si NO está en el suelo -> está saltando
-        if (!CheckGround.isGrounded)// Si el jugador no está en el suelo, activar la animación de salto y desactivar la animación de correr
+        // Si el jugador está tocando el suelo
+        if (CheckGround.isGrounded)
         {
-            animator.SetBool("Jump", true);// Activar la animación de salto
-            animator.SetBool("Run", false);// Desactivar la animación de correr
+            animator.SetBool("Jump", false); // Desactivar animación de salto
+            animator.SetBool("DoubleJump", false); // Desactivar animación de doble salto
+            animator.SetBool("Falling", false); // Desactivar animación de caída
         }
+        // Si el jugador NO está tocando el suelo
+        else
+        {
+            // Si el jugador está subiendo, activamos Jump
+            if (rb2d.linearVelocity.y > 0f)
+            {
+                animator.SetBool("Jump", true); // Activar animación de salto
+                animator.SetBool("Falling", false); // Desactivar animación de caída
+            }
+            // Si el jugador no está subiendo, entonces está cayendo
+            else
+            {
+                animator.SetBool("Jump", false); // Desactivar animación de salto
+                animator.SetBool("Falling", true); // Activar animación de caída
+            }
 
-        // Si está en el suelo -> reset animaciones
-        if (CheckGround.isGrounded)// Si el jugador está en el suelo, desactivar las animaciones de salto, doble salto y caída
-        {
-            animator.SetBool("Jump", false);
-            animator.SetBool("DoubleJump", false);
-            animator.SetBool("Falling", false);
+            // Mientras está en el aire, no debe reproducir Run
+            animator.SetBool("Run", false);
         }
-
-        // Si cae -> animación de caída
-        if (rb2d.linearVelocity.y < 0)// Si la velocidad vertical del jugador es menor que 0, activar la animación de caída
-        {
-            animator.SetBool("Falling", true);// Activar la animación de caída
-        }
-        else if (rb2d.linearVelocity.y > 0)// Si la velocidad vertical del jugador es mayor que 0, desactivar la animación de caída
-        {
-            animator.SetBool("Falling", false);// Desactivar la animación de caída
-        }
-
     }
 
-    // Manejar el movimiento horizontal del jugador y las animaciones correspondientes
     void FixedUpdate()
     {
         // ================= MOVIMIENTO =================
 
-        // Aplicamos movimiento horizontal
+        // Aplicamos movimiento horizontal manteniendo la velocidad vertical actual
         rb2d.linearVelocity = new Vector2(moveInput * runSpeed, rb2d.linearVelocity.y);
 
-        // Girar sprite según dirección
+        // ================= GIRO DEL SPRITE Y ANIMACIÓN RUN =================
+
+        // Si el jugador se mueve hacia la derecha
         if (moveInput > 0)
         {
-            spriteRenderer.flipX = false;
-            animator.SetBool("Run", true);
+            spriteRenderer.flipX = false; // Mirar hacia la derecha
+
+            // Solo activar Run si el jugador está tocando el suelo
+            animator.SetBool("Run", CheckGround.isGrounded);
         }
+        // Si el jugador se mueve hacia la izquierda
         else if (moveInput < 0)
         {
-            spriteRenderer.flipX = true;
-            animator.SetBool("Run", true);
+            spriteRenderer.flipX = true; // Mirar hacia la izquierda
+
+            // Solo activar Run si el jugador está tocando el suelo
+            animator.SetBool("Run", CheckGround.isGrounded);
         }
+        // Si no hay movimiento horizontal
         else
         {
-            animator.SetBool("Run", false);
+            animator.SetBool("Run", false); // Desactivar animación de correr
         }
 
         // ================= SALTO MEJORADO =================
 
         if (betterJump)
         {
-            // Caída más rápida
+            // Si el jugador está cayendo, modificamos la velocidad para controlar la caída
             if (rb2d.linearVelocity.y < 0)
             {
                 rb2d.linearVelocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
             }
-            // Salto más corto si sueltas el botón
+            // Si el jugador está subiendo y suelta el botón de salto, hacemos el salto más corto
             else if (rb2d.linearVelocity.y > 0 && !jumpHeld)
             {
                 rb2d.linearVelocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
             }
         }
     }
+
     // ================= INPUT SYSTEM =================
-    // Este método se ejecuta cuando mueves el joystick/teclas
+
     public void OnMove(InputAction.CallbackContext context)
     {
-        // Leemos el valor (Vector2) y nos quedamos con X (horizontal)
+        // Leemos el valor Vector2 del movimiento y nos quedamos solo con el eje X
         moveInput = context.ReadValue<Vector2>().x;
     }
 
-    // Este método se ejecuta cuando pulsas salto
     public void OnJump(InputAction.CallbackContext context)
     {
-        // Cuando empiezas a pulsar
+        // Cuando empieza a pulsarse el botón de salto
         if (context.started)
         {
-            jumpHeld = true;
+            jumpHeld = true; // Guardamos que el botón de salto está pulsado
 
-            // Si está en el suelo -> salto normal
+            // Si el jugador está en el suelo, realiza salto normal
             if (CheckGround.isGrounded)
             {
-                canDoubleJump = true;
-                rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpSpeed);
+                canDoubleJump = true; // Permitimos un doble salto después del salto normal
+                rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpSpeed); // Aplicamos fuerza vertical de salto
             }
-            // Si está en el aire -> posible doble salto
+            // Si el jugador está en el aire y todavía puede hacer doble salto
             else if (canDoubleJump)
             {
-                animator.SetBool("DoubleJump", true);
-                rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, doubleJumpSpeed);
-                canDoubleJump = false;
+                animator.SetBool("DoubleJump", true); // Activar animación de doble salto
+                rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, doubleJumpSpeed); // Aplicar velocidad del doble salto
+                canDoubleJump = false; // Consumimos el doble salto
             }
         }
 
-        // Cuando sueltas el botón (para salto mejorado)
+        // Cuando se suelta el botón de salto
         if (context.canceled)
         {
-            jumpHeld = false;
+            jumpHeld = false; // Guardamos que el botón de salto ya no está pulsado
         }
     }
 }
