@@ -50,7 +50,17 @@ public class JumpDamage : MonoBehaviour
 
         if (animator != null) // Comprobamos que hay animator asignado
         {
-            animator.Play("Hit"); // Reproducimos animación de daño
+
+            animator.SetBool("Hit", true); // Activa la animación de daño Hit
+
+            Invoke("ResetHit", 0.2f); // Después de un momento vuelve a false
+        }
+    }
+    public void ResetHit()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("Hit", false); // Permite volver a Run o Idle
         }
     }
 
@@ -58,8 +68,14 @@ public class JumpDamage : MonoBehaviour
     {
         if (isDead) return; // Evitamos ejecutar varias veces
 
-        lifes = 0; // Forzamos las vidas a 0 (muerte directa)
-        CheckLife(); // Llamamos a la comprobación de muerte
+        lifes = 0; // Forzamos la muerte directa
+
+        if (animator != null)
+        {
+            animator.SetBool("Hit", true); // Activamos Hit también cuando muere por power-up
+        }
+
+        Invoke("CheckLife", 0.2f); // Dejamos ver un instante la animación Hit antes de morir
     }
 
     public void CheckLife()
