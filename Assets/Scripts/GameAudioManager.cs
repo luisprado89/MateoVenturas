@@ -93,11 +93,15 @@ public class GameAudioManager : MonoBehaviour
 
     private void StopPowerUpMusicOnSceneChange()
     {
-        if (musicAudioSource != null && musicAudioSource.clip == powerUpActiveLoop) // Comprueba si estaba sonando la música del power-up
+        // Si no existe el AudioSource de música, no hacemos nada.
+        if (musicAudioSource == null)
         {
-            musicAudioSource.Stop(); // Detiene la música del power-up
-            musicAudioSource.clip = null; // Limpia el clip para que no siga asignado al cambiar de nivel
+            return;
         }
+
+        // Al cambiar de escena, siempre volvemos a poner la música normal.
+        // Así evitamos que se quede sonando el power-up o que el juego quede sin música.
+        PlayMusic();
     }
 
     public void PlayFruitCollectedSound()
